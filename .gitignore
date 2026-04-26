@@ -1,0 +1,13 @@
+.codex-work/
+.firebase/
+.omx/
+artifacts/
+manager-role-mobile-app/
+
+# Local env / deployment state
+.netlify/
+
+# Temp / scratch artifacts
+Mastering_AI_Judgment_animated_trial*.pptx
+Thumbs.db
+*.tmp

@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1e3b52" />
+  <title>생성형 AI 프롬프트 치트시트</title>
+  <style>
+    @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
+
+    :root {
+      --bg: #f7f5f0;
+      --surface: #ffffff;
+      --ink: #1f2b37;
+      --ink-soft: #637181;
+      --line: #d7d2c8;
+      --navy: #1e3b52;
+      --blue: #4472c4;
+      --gold: #b88a3a;
+      --green: #70ad47;
+      --orange: #ed7d31;
+      --blue-soft: #eef4fe;
+      --green-soft: #eef6ea;
+      --warm-soft: #f9efe5;
+      --coral-soft: #f8ebe6;
+      --shadow: 0 8px 24px rgba(31, 43, 55, 0.06);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Pretendard', sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.5;
+    }
+
+    .topbar {
+      height: 6px;
+      background: var(--navy);
+    }
+
+    .wrap {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 28px 24px 64px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+    }
+
+    .eyebrow {
+      color: var(--blue);
+      font-size: 14px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 46px;
+      line-height: 1.08;
+      letter-spacing: -0.04em;
+    }
+
+    .sub {
+      margin-top: 18px;
+      color: var(--ink-soft);
+      font-size: 20px;
+      line-height: 1.45;
+      max-width: 540px;
+    }
+
+    .header-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: flex-end;
+      min-width: 260px;
+    }
+
+    .callout {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 16px 18px;
+      box-shadow: var(--shadow);
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .callout::before,
+    .section-card::before,
+    .mini-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background: var(--navy);
+    }
+
+    .callout p {
+      margin: 0;
+      font-size: 15px;
+      color: var(--ink-soft);
+    }
+
+    .quote {
+      font-size: 26px;
+      line-height: 1.3;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--ink);
+      margin-bottom: 10px;
+    }
+
+    .toolbar {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 28px 0 20px;
+    }
+
+    button {
+      appearance: none;
+      border: 0;
+      border-radius: 999px;
+      padding: 12px 18px;
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 0.15s ease, opacity 0.15s ease, background 0.15s ease;
+      min-height: 44px;
+    }
+
+    button:hover {
+      transform: translateY(-1px);
+    }
+
+    .primary {
+      background: var(--navy);
+      color: #fff;
+    }
+
+    .secondary {
+      background: #e9eef3;
+      color: var(--ink);
+    }
+
+    .status {
+      font-size: 14px;
+      color: var(--ink-soft);
+      min-height: 22px;
+      margin-bottom: 8px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 16px;
+    }
+
+    .section-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 18px 18px 16px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      min-height: 360px;
+    }
+
+    .section-card.blue::before { background: var(--blue); }
+    .section-card.gold::before { background: var(--gold); }
+    .section-card.green::before { background: var(--green); }
+    .section-card.orange::before { background: var(--orange); }
+    .section-card.navy::before { background: var(--navy); }
+
+    .section-card.blue { background: var(--blue-soft); }
+    .section-card.gold { background: var(--warm-soft); }
+    .section-card.green { background: var(--green-soft); }
+    .section-card.orange { background: var(--coral-soft); }
+
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+
+    .kicker {
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--blue);
+      letter-spacing: -0.01em;
+    }
+
+    .section-card.gold .kicker { color: var(--gold); }
+    .section-card.green .kicker { color: var(--green); }
+    .section-card.orange .kicker { color: var(--orange); }
+    .section-card.navy .kicker { color: var(--navy); }
+
+    .copy-btn {
+      padding: 8px 12px;
+      font-size: 12px;
+      font-weight: 800;
+      background: rgba(255,255,255,0.84);
+      color: var(--ink);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    .card-title {
+      font-size: 28px;
+      line-height: 1.12;
+      letter-spacing: -0.03em;
+      font-weight: 800;
+      margin: 0 0 10px;
+    }
+
+    .card-desc {
+      font-size: 14px;
+      line-height: 1.5;
+      color: var(--ink-soft);
+      margin-bottom: 12px;
+    }
+
+    pre {
+      margin: 0;
+      white-space: pre-wrap;
+      word-break: keep-all;
+      background: rgba(255,255,255,0.78);
+      border: 1px solid rgba(215, 210, 200, 0.9);
+      border-radius: 14px;
+      padding: 14px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 13px;
+      line-height: 1.6;
+      color: var(--ink);
+      flex: 1;
+      overflow: auto;
+    }
+
+    .bottom-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .mini-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      padding: 18px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .mini-card.green { background: var(--green-soft); }
+    .mini-card.blue { background: var(--blue-soft); }
+
+    .mini-card h3 {
+      margin: 0 0 12px;
+      font-size: 22px;
+      line-height: 1.18;
+      letter-spacing: -0.03em;
+    }
+
+    .mini-card p,
+    .mini-card li {
+      font-size: 15px;
+      color: var(--ink);
+    }
+
+    .mini-card ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .mini-card li + li {
+      margin-top: 8px;
+    }
+
+    .footer-note {
+      margin-top: 16px;
+      font-size: 14px;
+      color: var(--ink-soft);
+    }
+
+    .tab-section {
+      margin-top: 22px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      padding: 18px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .tab-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background: var(--navy);
+    }
+
+    .tab-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+
+    .tab-copy {
+      background: #e9eef3;
+      color: var(--ink);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-size: 13px;
+      font-weight: 800;
+      min-height: 42px;
+    }
+
+    .tab-desc {
+      margin-top: 8px;
+      font-size: 14px;
+      color: var(--ink-soft);
+    }
+
+    .tab-buttons {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 18px;
+    }
+
+    .tab-btn {
+      background: #eef2f6;
+      color: var(--ink);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 10px 16px;
+      font-size: 13px;
+      font-weight: 800;
+      min-height: 42px;
+    }
+
+    .tab-btn[aria-selected="true"] {
+      background: var(--navy);
+      color: #fff;
+      border-color: var(--navy);
+    }
+
+    .role-panel {
+      display: none;
+    }
+
+    .role-panel.active {
+      display: block;
+    }
+
+    .role-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .role-card {
+      background: var(--bg);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 14px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .role-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background: var(--blue);
+    }
+
+    .role-card.gold::before { background: var(--gold); }
+    .role-card.green::before { background: var(--green); }
+    .role-card.orange::before { background: var(--orange); }
+
+    .role-card .prompt-name {
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--blue);
+      margin-bottom: 8px;
+    }
+
+    .role-card.gold .prompt-name { color: var(--gold); }
+    .role-card.green .prompt-name { color: var(--green); }
+    .role-card.orange .prompt-name { color: var(--orange); }
+
+    .role-card h4 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      line-height: 1.18;
+      letter-spacing: -0.03em;
+    }
+
+    .role-card p {
+      margin: 0 0 10px;
+      font-size: 13px;
+      color: var(--ink-soft);
+      line-height: 1.5;
+    }
+
+    .role-card-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: flex-start;
+      margin-bottom: 6px;
+    }
+
+    .role-copy-btn {
+      background: rgba(255,255,255,0.88);
+      color: var(--ink);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 7px 10px;
+      font-size: 12px;
+      font-weight: 800;
+      min-height: 38px;
+      white-space: nowrap;
+    }
+
+    .role-card pre {
+      font-size: 12px;
+      line-height: 1.55;
+      padding: 12px;
+      min-height: 180px;
+    }
+
+    @media (max-width: 1080px) {
+      .grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .bottom-grid {
+        grid-template-columns: 1fr;
+      }
+      .role-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .wrap {
+        padding: 18px 14px 96px;
+      }
+      h1 {
+        font-size: 34px;
+      }
+      .sub {
+        font-size: 17px;
+      }
+      .quote {
+        font-size: 22px;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+      }
+      .header-actions {
+        align-items: stretch;
+        width: 100%;
+      }
+      .toolbar {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        background: rgba(247, 245, 240, 0.92);
+        backdrop-filter: blur(10px);
+        padding: 8px 0 10px;
+        margin: 20px 0 16px;
+      }
+      .toolbar button {
+        width: 100%;
+      }
+      .section-card {
+        min-height: auto;
+        padding: 16px 16px 14px;
+      }
+      .card-top {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .copy-btn {
+        width: 100%;
+        text-align: center;
+      }
+      .tab-header {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .tab-buttons {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 4px;
+      }
+      .tab-btn {
+        flex: 0 0 auto;
+        white-space: nowrap;
+      }
+      .tab-copy {
+        width: 100%;
+      }
+      .role-card-top {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .role-copy-btn {
+        width: 100%;
+      }
+      .card-title {
+        font-size: 24px;
+      }
+      pre {
+        font-size: 12px;
+        line-height: 1.55;
+        padding: 12px;
+      }
+      .mini-card {
+        padding: 16px;
+      }
+      .mini-card h3 {
+        font-size: 20px;
+      }
+      .footer-note {
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar"></div>
+  <div class="wrap">
+    <div class="header">
+      <div>
+        <div class="eyebrow">생성형 AI 기초활용역량</div>
+        <h1>프롬프트 치트시트</h1>
+        <div class="sub">
+          목적을 먼저 정하고, AI가 먼저 질문하게 만들고,
+          마지막 판단은 내가 잡는 실전용 프롬프트 모음
+        </div>
+      </div>
+      <div class="header-actions">
+        <div class="callout">
+          <div class="quote">AI에게 바로 답을 달라고 하지 말고, 먼저 질문하게 하라.</div>
+          <p>강의 전체를 관통하는 한 문장</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="toolbar">
+      <button class="primary" id="copyAllBtn">전체 프롬프트 복사</button>
+      <button class="secondary" id="copyChecklistBtn">마지막 체크 복사</button>
+    </div>
+    <div class="status" id="status"></div>
+
+    <div class="grid">
+      <section class="section-card blue">
+        <div class="card-top">
+          <div class="kicker">1. 인터뷰형 시작</div>
+          <button class="copy-btn" data-copy-target="prompt-1">복사</button>
+        </div>
+        <h2 class="card-title">바로 답하지 말고,<br/>먼저 질문해줘</h2>
+        <div class="card-desc">목적, 청자, 제약, 기준이 흐릴 때 가장 먼저 쓰는 시작 프롬프트</div>
+        <pre id="prompt-1">지금 바로 답하지 말고, 내가 진짜 무엇을 하려는지 더 정확히 파악할 수 있도록 먼저 5개의 질문을 해줘.
+특히 목적, 청자, 제약조건, 절대 놓치면 안 되는 기준을 확인해줘.</pre>
+      </section>
+
+      <section class="section-card gold">
+        <div class="card-top">
+          <div class="kicker">2. 목적 찾기</div>
+          <button class="copy-btn" data-copy-target="prompt-2">복사</button>
+        </div>
+        <h2 class="card-title">원하는 결과는<br/>질문을 쪼개야 보인다</h2>
+        <div class="card-desc">결과물과 진짜 결과를 구분하고 싶을 때 쓰는 목적 발견 프롬프트</div>
+        <pre id="prompt-2">내가 지금 하려는 일을 더 정확히 정의하고 싶다.
+바로 해결책을 주지 말고 아래 순서로 질문해줘.
+
+1. 지금 조금 더 수월해졌으면 하는 장면은 무엇인가
+2. 그 장면이 왜 번거로운가
+3. 그 일이 잘 되면 무엇이 달라지는가
+4. 그게 왜 중요한가
+5. 나에게 이 일의 성과란 무엇인가
+6. 누가 무엇을 인정해주면 잘 된 것인가
+7. 결국 내가 진짜 원하는 결과는 무엇인가
+
+마지막에는
+"당신이 진짜 원하는 것은 ______ 이다."
+형식으로 정리해줘.</pre>
+      </section>
+
+      <section class="section-card green">
+        <div class="card-top">
+          <div class="kicker">3. CRAFTO 점검</div>
+          <button class="copy-btn" data-copy-target="prompt-3">복사</button>
+        </div>
+        <h2 class="card-title">빠진 맥락이 있으면<br/>먼저 질문해줘</h2>
+        <div class="card-desc">내 질문을 구조화하고 싶을 때 쓰는 점검 프롬프트</div>
+        <pre id="prompt-3">내 질문을 CRAFTO 기준으로 점검해줘.
+빠진 맥락, 모호한 부분, 판단 기준이 부족한 부분이 있으면 먼저 질문해줘.
+
+- Context: 지금 어떤 상황인가
+- Role: AI는 어떤 역할을 해야 하는가
+- Audience: 누가 이 결과를 보는가
+- Format: 어떤 형태가 필요한가
+- Tone: 어느 수준과 말투가 필요한가
+- Option: 제약, 금지선, 선택 기준은 무엇인가</pre>
+      </section>
+
+      <section class="section-card orange">
+        <div class="card-top">
+          <div class="kicker">4. 1-3-1로 끝내기</div>
+          <button class="copy-btn" data-copy-target="prompt-4">복사</button>
+        </div>
+        <h2 class="card-title">많이 만드는 것보다,<br/>줄이고 끝내기</h2>
+        <div class="card-desc">아이디어는 많은데 선택이 안 될 때 쓰는 종결 프롬프트</div>
+        <pre id="prompt-4">이 문제를 1-3-1 구조로 정리해줘.
+
+1. 문제를 한 문장으로 정의해줘
+2. 실행 가능한 대안 3개를 제시해줘
+3. 각 대안의 장단점을 간단히 비교해줘
+4. 그중 권고안 1개를 제안해줘
+5. 마지막에는 내가 직접 다시 판단해야 할 쟁점도 말해줘</pre>
+      </section>
+
+      <section class="section-card navy">
+        <div class="card-top">
+          <div class="kicker">5. 피드백 루프</div>
+          <button class="copy-btn" data-copy-target="prompt-5">복사</button>
+        </div>
+        <h2 class="card-title">초안 다음에는<br/>점검이 들어가야 한다</h2>
+        <div class="card-desc" style="color:#c9d7e4;">초안을 비평가의 시선으로 다시 보는 점검 프롬프트</div>
+        <pre id="prompt-5">이 결과물을 바로 고치지 말고, 먼저 네 가지 관점에서 점검해줘.
+
+1. 메타인지: 본질과 목적에 맞는가
+2. 레드팀: 치명적 리스크는 무엇인가
+3. 심사위원: 논리 비약은 없는가
+4. 전문가: 더 나은 대안은 없는가
+
+각 관점마다 한 줄씩만 말해줘.
+마지막에는 "내가 직접 다시 판단해야 할 쟁점"을 한 줄로 정리해줘.</pre>
+      </section>
+
+      <section class="section-card gold">
+        <div class="card-top">
+          <div class="kicker">도구 선택 기준</div>
+        </div>
+        <h2 class="card-title">좋은 툴보다<br/>좋은 길 설계</h2>
+        <div class="card-desc">브랜드보다 목적을 먼저 보고 이동수단을 고른다</div>
+        <pre id="tool-guide">LLM: 생각 열기
+소스 기반 AI: 자료 검토
+딥리서치: 외부 조사
+에이전트형: 여러 단계 연결</pre>
+      </section>
+    </div>
+
+    <div class="bottom-grid">
+      <div class="mini-card blue">
+        <div class="kicker">직군 예시</div>
+        <h3>내 일에 바로 붙이는 장면</h3>
+        <p>영업: 미팅 준비 / R&amp;D: 자료 비교 / 품질: 이슈 정리 / 기획: 트렌드 해석</p>
+      </div>
+
+      <div class="mini-card green">
+        <div class="kicker">마지막 체크</div>
+        <h3>내가 직접 판단할 것은 무엇인가</h3>
+        <ul id="checklist">
+          <li>내가 진짜 원하는 결과는 무엇인가</li>
+          <li>누가 이 결과를 보는가</li>
+          <li>무엇을 절대 놓치면 안 되는가</li>
+          <li>AI는 먼저 무엇을 질문해야 하는가</li>
+          <li>마지막에 내가 직접 판단할 것은 무엇인가</li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="tab-section">
+      <div class="tab-header">
+        <div>
+          <div class="kicker">직군별 탭</div>
+          <h3 style="margin:0; font-size:28px; line-height:1.14; letter-spacing:-0.03em;">내 일에 맞는 예시만 골라 보기</h3>
+          <div class="tab-desc">현재 직군 탭만 열리고, 해당 탭의 프롬프트만 복사할 수 있습니다.</div>
+        </div>
+        <button class="tab-copy" id="copyRoleBtn">현재 탭 프롬프트 복사</button>
+      </div>
+
+      <div class="tab-buttons" role="tablist" aria-label="직군별 프롬프트 탭">
+        <button class="tab-btn" role="tab" aria-selected="true" aria-controls="role-sales" id="tab-sales" data-role="sales">영업 / 고객 대응</button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="role-rnd" id="tab-rnd" data-role="rnd">R&amp;D / 공정 / 설계</button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="role-quality" id="tab-quality" data-role="quality">품질 / TEST / EHS</button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="role-strategy" id="tab-strategy" data-role="strategy">기획 / IT / 인사</button>
+      </div>
+
+      <div class="role-panel active" id="role-sales" role="tabpanel" aria-labelledby="tab-sales">
+        <div class="role-grid">
+          <article class="role-card">
+            <div class="role-card-top">
+              <div class="prompt-name">인터뷰형 시작</div>
+              <button class="role-copy-btn" data-copy-target="role-sales-1">복사</button>
+            </div>
+            <h4>고객 미팅 준비</h4>
+            <p>미팅 목표와 고객 우려를 먼저 질문하게 만든다.</p>
+            <pre data-role-prompt id="role-sales-1">지금 바로 고객 미팅 준비안을 만들지 말고, 내가 이번 미팅에서 무엇을 얻어야 하는지 더 정확히 파악할 수 있도록 먼저 5개의 질문을 해줘.
+특히 고객의 관심사, 고객이 우려할 질문, 이번 미팅의 성공 기준을 확인해줘.</pre>
+          </article>
+          <article class="role-card gold">
+            <div class="role-card-top">
+              <div class="prompt-name">CRAFTO 점검</div>
+              <button class="role-copy-btn" data-copy-target="role-sales-2">복사</button>
+            </div>
+            <h4>고객 대응 질문 점검</h4>
+            <p>고객 상황, 미팅 목적, 경쟁사 이슈를 빠뜨리지 않게 한다.</p>
+            <pre data-role-prompt id="role-sales-2">내 고객 미팅 준비 질문을 CRAFTO 기준으로 점검해줘.
+빠진 맥락이 있으면 고객 상황, 미팅 목적, 경쟁사 이슈, 기술 설명 수준부터 먼저 질문해줘.</pre>
+          </article>
+          <article class="role-card orange">
+            <div class="role-card-top">
+              <div class="prompt-name">피드백 루프</div>
+              <button class="role-copy-btn" data-copy-target="role-sales-3">복사</button>
+            </div>
+            <h4>고객 대응 초안 점검</h4>
+            <p>과장, 오해 가능성, 빠진 질문을 먼저 본다.</p>
+            <pre data-role-prompt id="role-sales-3">이 고객 대응 초안을 네 가지 관점에서 점검해줘.
+특히 고객이 오해할 수 있는 표현과, 지나치게 과장된 표현이 있는지 함께 봐줘.
+마지막에는 내가 직접 다시 판단해야 할 쟁점을 한 줄로 정리해줘.</pre>
+          </article>
+        </div>
+      </div>
+
+      <div class="role-panel" id="role-rnd" role="tabpanel" aria-labelledby="tab-rnd">
+        <div class="role-grid">
+          <article class="role-card">
+            <div class="role-card-top">
+              <div class="prompt-name">인터뷰형 시작</div>
+              <button class="role-copy-btn" data-copy-target="role-rnd-1">복사</button>
+            </div>
+            <h4>논문 / 기술자료 비교</h4>
+            <p>비교 목적과 기술 리스크를 먼저 확인한다.</p>
+            <pre data-role-prompt id="role-rnd-1">지금 바로 이 논문을 요약하지 말고, 내가 이 자료를 왜 보고 있는지 더 정확히 파악할 수 있도록 먼저 5개의 질문을 해줘.
+특히 내가 비교하려는 쟁점, 절대 놓치면 안 되는 기술 리스크, 다음 검토 방향을 확인해줘.</pre>
+          </article>
+          <article class="role-card gold">
+            <div class="role-card-top">
+              <div class="prompt-name">1-3-1</div>
+              <button class="role-copy-btn" data-copy-target="role-rnd-2">복사</button>
+            </div>
+            <h4>다음 검토 방향 정리</h4>
+            <p>가능한 방향을 3개로 보고 우선순위 1개를 정한다.</p>
+            <pre data-role-prompt id="role-rnd-2">이 기술 이슈에 대한 다음 검토 방향을 1-3-1 구조로 정리해줘.
+가능한 검토 방향 3개를 제시하고, 가장 우선 검토할 방향 1개를 제안해줘.
+마지막에는 내가 직접 다시 판단해야 할 쟁점도 적어줘.</pre>
+          </article>
+          <article class="role-card green">
+            <div class="role-card-top">
+              <div class="prompt-name">피드백 루프</div>
+              <button class="role-copy-btn" data-copy-target="role-rnd-3">복사</button>
+            </div>
+            <h4>기술 검토 정리안 점검</h4>
+            <p>자료 밖 추정과 논리 비약을 먼저 본다.</p>
+            <pre data-role-prompt id="role-rnd-3">이 기술 검토 정리안을 네 가지 관점에서 점검해줘.
+특히 논리 비약과 자료 밖 추정이 있는지 먼저 봐줘.
+마지막에는 내가 직접 다시 판단해야 할 쟁점을 한 줄로 정리해줘.</pre>
+          </article>
+        </div>
+      </div>
+
+      <div class="role-panel" id="role-quality" role="tabpanel" aria-labelledby="tab-quality">
+        <div class="role-grid">
+          <article class="role-card">
+            <div class="role-card-top">
+              <div class="prompt-name">인터뷰형 시작</div>
+              <button class="role-copy-btn" data-copy-target="role-quality-1">복사</button>
+            </div>
+            <h4>품질 이슈 정리</h4>
+            <p>판단해야 할 것과 빠진 확인 항목을 먼저 드러낸다.</p>
+            <pre data-role-prompt id="role-quality-1">지금 바로 품질 이슈를 정리하지 말고, 내가 이 사안에서 무엇을 판단해야 하는지 더 정확히 파악할 수 있도록 먼저 5개의 질문을 해줘.
+특히 현재 확인된 사실, 빠진 확인 항목, 가장 중요한 리스크를 확인해줘.</pre>
+          </article>
+          <article class="role-card gold">
+            <div class="role-card-top">
+              <div class="prompt-name">CRAFTO 점검</div>
+              <button class="role-copy-btn" data-copy-target="role-quality-2">복사</button>
+            </div>
+            <h4>이슈 보고 질문 점검</h4>
+            <p>보고 대상, 리스크 기준, 즉시 조치 필요 여부를 먼저 점검한다.</p>
+            <pre data-role-prompt id="role-quality-2">내 품질 이슈 정리 질문을 CRAFTO 기준으로 점검해줘.
+빠진 맥락이 있으면 현재 확인된 사실, 보고 대상, 리스크 기준, 즉시 조치 필요 여부부터 먼저 질문해줘.</pre>
+          </article>
+          <article class="role-card orange">
+            <div class="role-card-top">
+              <div class="prompt-name">피드백 루프</div>
+              <button class="role-copy-btn" data-copy-target="role-quality-3">복사</button>
+            </div>
+            <h4>품질 보고 초안 점검</h4>
+            <p>빠진 리스크와 오해될 표현을 먼저 본다.</p>
+            <pre data-role-prompt id="role-quality-3">이 품질 이슈 보고 초안을 네 가지 관점에서 점검해줘.
+특히 빠진 리스크와 보고 시 오해될 수 있는 표현을 먼저 봐줘.
+마지막에는 내가 직접 다시 판단해야 할 쟁점을 한 줄로 정리해줘.</pre>
+          </article>
+        </div>
+      </div>
+
+      <div class="role-panel" id="role-strategy" role="tabpanel" aria-labelledby="tab-strategy">
+        <div class="role-grid">
+          <article class="role-card">
+            <div class="role-card-top">
+              <div class="prompt-name">인터뷰형 시작</div>
+              <button class="role-copy-btn" data-copy-target="role-strategy-1">복사</button>
+            </div>
+            <h4>트렌드 자료 정리</h4>
+            <p>누가 읽고 어떤 판단에 쓰는지부터 확인한다.</p>
+            <pre data-role-prompt id="role-strategy-1">지금 바로 이 트렌드 자료를 정리하지 말고, 내가 우리 조직에서 어떤 판단에 쓰려는지 더 정확히 파악할 수 있도록 먼저 5개의 질문을 해줘.
+특히 누가 읽는지, 어떤 시사점을 뽑아야 하는지, 무엇을 기준으로 좋고 나쁨을 판단할지 확인해줘.</pre>
+          </article>
+          <article class="role-card gold">
+            <div class="role-card-top">
+              <div class="prompt-name">1-3-1</div>
+              <button class="role-copy-btn" data-copy-target="role-strategy-2">복사</button>
+            </div>
+            <h4>조직 대응 방향 정리</h4>
+            <p>대응 방향을 3개로 보고 권고안 1개로 좁힌다.</p>
+            <pre data-role-prompt id="role-strategy-2">이 AI 트렌드 자료를 바탕으로 우리 조직의 대응 방향을 1-3-1 구조로 정리해줘.
+가능한 대응 방향 3개와 권고안 1개를 제안해줘.
+마지막에는 내가 직접 다시 판단해야 할 쟁점도 적어줘.</pre>
+          </article>
+          <article class="role-card green">
+            <div class="role-card-top">
+              <div class="prompt-name">피드백 루프</div>
+              <button class="role-copy-btn" data-copy-target="role-strategy-3">복사</button>
+            </div>
+            <h4>전략 메모 초안 점검</h4>
+            <p>일반론과 빠진 반대 관점을 함께 본다.</p>
+            <pre data-role-prompt id="role-strategy-3">이 전략 메모 초안을 네 가지 관점에서 점검해줘.
+특히 우리 조직에 맞지 않는 일반론이 섞여 있는지, 빠진 반대 관점이 있는지 함께 봐줘.
+마지막에는 내가 직접 다시 판단해야 할 쟁점을 한 줄로 정리해줘.</pre>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer-note">
+      수강생용 웹 버전. 복사해서 바로 써보고, 내 업무 장면에 맞게 단어만 바꾸면 됩니다.
+    </div>
+  </div>
+
+  <script>
+    const status = document.getElementById('status');
+
+    function setStatus(message) {
+      status.textContent = message;
+      clearTimeout(window.__statusTimer);
+      window.__statusTimer = setTimeout(() => {
+        status.textContent = '';
+      }, 2500);
+    }
+
+    async function copyText(text, message) {
+      try {
+        await navigator.clipboard.writeText(text);
+        setStatus(message);
+      } catch (err) {
+        setStatus('복사에 실패했습니다. 직접 선택해서 복사해 주세요.');
+      }
+    }
+
+    document.querySelectorAll('[data-copy-target]').forEach((button) => {
+      button.addEventListener('click', async () => {
+        const target = document.getElementById(button.dataset.copyTarget);
+        await copyText(target.innerText.trim(), '프롬프트를 복사했습니다.');
+      });
+    });
+
+    document.getElementById('copyAllBtn').addEventListener('click', async () => {
+      const blocks = Array.from(document.querySelectorAll('pre'))
+        .map((el) => el.innerText.trim())
+        .join('\n\n---\n\n');
+      await copyText(blocks, '전체 프롬프트를 복사했습니다.');
+    });
+
+    document.getElementById('copyChecklistBtn').addEventListener('click', async () => {
+      const checklist = Array.from(document.querySelectorAll('#checklist li'))
+        .map((li) => `- ${li.innerText.trim()}`)
+        .join('\n');
+      await copyText(checklist, '마지막 체크를 복사했습니다.');
+    });
+
+    const roleTabs = Array.from(document.querySelectorAll('.tab-btn'));
+    const rolePanels = Array.from(document.querySelectorAll('.role-panel'));
+    const copyRoleBtn = document.getElementById('copyRoleBtn');
+
+    function setActiveRole(role) {
+      roleTabs.forEach((tab) => {
+        const selected = tab.dataset.role === role;
+        tab.setAttribute('aria-selected', selected ? 'true' : 'false');
+      });
+      rolePanels.forEach((panel) => {
+        panel.classList.toggle('active', panel.id === `role-${role}`);
+      });
+    }
+
+    roleTabs.forEach((tab) => {
+      tab.addEventListener('click', () => setActiveRole(tab.dataset.role));
+    });
+
+    copyRoleBtn.addEventListener('click', async () => {
+      const activePanel = document.querySelector('.role-panel.active');
+      const text = Array.from(activePanel.querySelectorAll('[data-role-prompt]'))
+        .map((el) => el.innerText.trim())
+        .join('\n\n---\n\n');
+      await copyText(text, '현재 직군 예시 프롬프트를 복사했습니다.');
+    });
+  </script>
+</body>
+</html>

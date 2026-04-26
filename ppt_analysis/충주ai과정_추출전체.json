@@ -1,0 +1,4136 @@
+{
+  "slides": [
+    {
+      "slide": 1,
+      "part": "ppt/slides/slide1.xml",
+      "text_count": 2,
+      "texts": [
+        "WELCOME",
+        "1"
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 2,
+      "shape_tags": {
+        "sp": 2
+      }
+    },
+    {
+      "slide": 2,
+      "part": "ppt/slides/slide2.xml",
+      "text_count": 3,
+      "texts": [
+        "자신의 AI활용 점수를 1~10점으로 매겨보세요",
+        "사용하는 ai서비스도 이야기 해 주세요",
+        "예: 4점, GPT와 Perflexity 정도?"
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 1,
+      "shape_tags": {
+        "sp": 1
+      }
+    },
+    {
+      "slide": 3,
+      "part": "ppt/slides/slide3.xml",
+      "text_count": 1,
+      "texts": [
+        "모로 가도 서울만 가면 된다?"
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 1,
+      "shape_tags": {
+        "sp": 1
+      }
+    },
+    {
+      "slide": 4,
+      "part": "ppt/slides/slide4.xml",
+      "text_count": 1,
+      "texts": [
+        "Event VS Process"
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 1,
+      "shape_tags": {
+        "sp": 1
+      }
+    },
+    {
+      "slide": 5,
+      "part": "ppt/slides/slide5.xml",
+      "text_count": 1,
+      "texts": [
+        "Right Process"
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 1,
+      "shape_tags": {
+        "sp": 1
+      }
+    },
+    {
+      "slide": 6,
+      "part": "ppt/slides/slide6.xml",
+      "text_count": 4,
+      "texts": [
+        "ㅎ ㅅ",
+        "학(學) 습(習)",
+        "인지(Perceive)",
+        "처리(Process)"
+      ],
+      "notes": [],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId2",
+          "target": "../media/image5.png",
+          "part": "ppt/media/image5.png",
+          "width": 317,
+          "height": 239,
+          "format": "PNG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 5,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 4
+      }
+    },
+    {
+      "slide": 7,
+      "part": "ppt/slides/slide7.xml",
+      "text_count": 2,
+      "texts": [
+        "https://m.site.naver.com/1UBCS",
+        "대소문자 구분(UBCS대문자)"
+      ],
+      "notes": [
+        "7"
+      ],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId4",
+          "target": "../media/image6.jpg",
+          "part": "ppt/media/image6.jpg",
+          "width": 357,
+          "height": 357,
+          "format": "JPEG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 2,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 1
+      }
+    },
+    {
+      "slide": 8,
+      "part": "ppt/slides/slide8.xml",
+      "text_count": 3,
+      "texts": [
+        "자신의 AI활용 점수를 1~10점으로 매겨보세요",
+        "사용하는 ai서비스도 적어 주세요",
+        "예: 4점, GPT와 Perflexity 정도?"
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 1,
+      "shape_tags": {
+        "sp": 1
+      }
+    },
+    {
+      "slide": 9,
+      "part": "ppt/slides/slide9.xml",
+      "text_count": 20,
+      "texts": [
+        "4MAT 구조",
+        "02",
+        "오늘의 진행",
+        "WHY",
+        "왜 AI인가?",
+        "왜 AI를 써도 아직",
+        "답답한가",
+        "WHAT",
+        "AI를 어떤 도구로",
+        "이해해야 하는가",
+        "어떤 흐름으로 AI는 나아가고 있는가",
+        "AI도구들이 있는가",
+        "HOW",
+        "어떻게 질문하고",
+        "구조화하고 점검하는가",
+        "어떤 도구를 어떻게 활용할 수 있는가",
+        "IF",
+        "그래서 내 업무에",
+        "무엇을 적용할 것인가",
+        "무엇이 달라지는가"
+      ],
+      "notes": [
+        "9"
+      ],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 21,
+      "shape_tags": {
+        "sp": 21
+      }
+    },
+    {
+      "slide": 10,
+      "part": "ppt/slides/slide10.xml",
+      "text_count": 2,
+      "texts": [
+        "AI,",
+        "왜 필요하세요?"
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 1,
+      "shape_tags": {
+        "sp": 1
+      }
+    },
+    {
+      "slide": 11,
+      "part": "ppt/slides/slide11.xml",
+      "text_count": 6,
+      "texts": [
+        "AI능력 좋아지면?",
+        "안 좋아지면?",
+        "AI,",
+        "왜 필요하세요?",
+        "https://m.site.naver.com/1UBCS",
+        "대소문자 구분(UBCS대문자)"
+      ],
+      "notes": [],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId3",
+          "target": "../media/image6.jpg",
+          "part": "ppt/media/image6.jpg",
+          "width": 357,
+          "height": 357,
+          "format": "JPEG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 4,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 3
+      }
+    },
+    {
+      "slide": 12,
+      "part": "ppt/slides/slide12.xml",
+      "text_count": 2,
+      "texts": [
+        "AI?",
+        "LLM?"
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 1,
+      "shape_tags": {
+        "sp": 1
+      }
+    },
+    {
+      "slide": 13,
+      "part": "ppt/slides/slide13.xml",
+      "text_count": 1,
+      "texts": [
+        "LLM은 '대규모 언어 모델(Large Language Model)'의 약자입니다. 방대한 양의 텍스트 데이터를 학습하여 사람의 언어를 이해하고, 자연스러운 문장을 생성하는 인공지능(AI) 모델입니다."
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 2,
+      "shape_tags": {
+        "sp": 2
+      }
+    },
+    {
+      "slide": 14,
+      "part": "ppt/slides/slide14.xml",
+      "text_count": 1,
+      "texts": [
+        "내 __이 멈추지 않는 탓일까?ㅠㅠ"
+      ],
+      "notes": [],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId2",
+          "target": "../media/image7.jpg",
+          "part": "ppt/media/image7.jpg",
+          "width": 576,
+          "height": 1024,
+          "format": "JPEG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 2,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 1
+      }
+    },
+    {
+      "slide": 15,
+      "part": "ppt/slides/slide15.xml",
+      "text_count": 1,
+      "texts": [
+        "내 골반이 멈추지 않는 탓일까?ㅠㅠ"
+      ],
+      "notes": [],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId2",
+          "target": "../media/image7.jpg",
+          "part": "ppt/media/image7.jpg",
+          "width": 576,
+          "height": 1024,
+          "format": "JPEG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 2,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 1
+      }
+    },
+    {
+      "slide": 16,
+      "part": "ppt/slides/slide16.xml",
+      "text_count": 1,
+      "texts": [
+        "나 지금 너무 ___, 연진아"
+      ],
+      "notes": [],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId2",
+          "target": "../media/image8.jpg",
+          "part": "ppt/media/image8.jpg",
+          "width": 720,
+          "height": 405,
+          "format": "JPEG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 2,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 1
+      }
+    },
+    {
+      "slide": 17,
+      "part": "ppt/slides/slide17.xml",
+      "text_count": 1,
+      "texts": [
+        "나 지금 너무 신나, 연진아"
+      ],
+      "notes": [],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId2",
+          "target": "../media/image8.jpg",
+          "part": "ppt/media/image8.jpg",
+          "width": 720,
+          "height": 405,
+          "format": "JPEG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 2,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 1
+      }
+    },
+    {
+      "slide": 18,
+      "part": "ppt/slides/slide18.xml",
+      "text_count": 1,
+      "texts": [
+        "우린 ___잖아"
+      ],
+      "notes": [],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId2",
+          "target": "../media/image9.png",
+          "part": "ppt/media/image9.png",
+          "width": 1200,
+          "height": 675,
+          "format": "PNG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 2,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 1
+      }
+    },
+    {
+      "slide": 19,
+      "part": "ppt/slides/slide19.xml",
+      "text_count": 1,
+      "texts": [
+        "우린 깐부잖아"
+      ],
+      "notes": [],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId2",
+          "target": "../media/image9.png",
+          "part": "ppt/media/image9.png",
+          "width": 1200,
+          "height": 675,
+          "format": "PNG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 2,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 1
+      }
+    },
+    {
+      "slide": 20,
+      "part": "ppt/slides/slide20.xml",
+      "text_count": 1,
+      "texts": [
+        "이거 완전 럭키____잖아!"
+      ],
+      "notes": [],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId2",
+          "target": "../media/image10.jpeg",
+          "part": "ppt/media/image10.jpeg",
+          "width": 1200,
+          "height": 900,
+          "format": "JPEG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 2,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 1
+      }
+    },
+    {
+      "slide": 21,
+      "part": "ppt/slides/slide21.xml",
+      "text_count": 1,
+      "texts": [
+        "이거 완전 럭키비키잖아!"
+      ],
+      "notes": [],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId2",
+          "target": "../media/image10.jpeg",
+          "part": "ppt/media/image10.jpeg",
+          "width": 1200,
+          "height": 900,
+          "format": "JPEG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 2,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 1
+      }
+    },
+    {
+      "slide": 22,
+      "part": "ppt/slides/slide22.xml",
+      "text_count": 1,
+      "texts": [
+        "나야, _____"
+      ],
+      "notes": [],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId2",
+          "target": "../media/image11.jpg",
+          "part": "ppt/media/image11.jpg",
+          "width": 1116,
+          "height": 623,
+          "format": "JPEG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 2,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 1
+      }
+    },
+    {
+      "slide": 23,
+      "part": "ppt/slides/slide23.xml",
+      "text_count": 1,
+      "texts": [
+        "나야, 들기름"
+      ],
+      "notes": [],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId2",
+          "target": "../media/image11.jpg",
+          "part": "ppt/media/image11.jpg",
+          "width": 1116,
+          "height": 623,
+          "format": "JPEG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 2,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 1
+      }
+    },
+    {
+      "slide": 24,
+      "part": "ppt/slides/slide24.xml",
+      "text_count": 1,
+      "texts": [
+        "_____해서, 좋았다"
+      ],
+      "notes": [],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId2",
+          "target": "../media/image11.jpg",
+          "part": "ppt/media/image11.jpg",
+          "width": 1116,
+          "height": 623,
+          "format": "JPEG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 2,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 1
+      }
+    },
+    {
+      "slide": 25,
+      "part": "ppt/slides/slide25.xml",
+      "text_count": 1,
+      "texts": [
+        "재도전해서, 좋았다"
+      ],
+      "notes": [],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId2",
+          "target": "../media/image11.jpg",
+          "part": "ppt/media/image11.jpg",
+          "width": 1116,
+          "height": 623,
+          "format": "JPEG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 2,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 1
+      }
+    },
+    {
+      "slide": 26,
+      "part": "ppt/slides/slide26.xml",
+      "text_count": 1,
+      "texts": [
+        "슈슈슈 _______"
+      ],
+      "notes": [],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId2",
+          "target": "../media/image12.jpg",
+          "part": "ppt/media/image12.jpg",
+          "width": 710,
+          "height": 474,
+          "format": "JPEG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 2,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 1
+      }
+    },
+    {
+      "slide": 27,
+      "part": "ppt/slides/slide27.xml",
+      "text_count": 1,
+      "texts": [
+        "슈슈슈 슈퍼노바"
+      ],
+      "notes": [],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId2",
+          "target": "../media/image12.jpg",
+          "part": "ppt/media/image12.jpg",
+          "width": 710,
+          "height": 474,
+          "format": "JPEG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 2,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 1
+      }
+    },
+    {
+      "slide": 28,
+      "part": "ppt/slides/slide28.xml",
+      "text_count": 1,
+      "texts": [
+        "넌 나에게 ___을 줬어"
+      ],
+      "notes": [],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId2",
+          "target": "../media/image13.png",
+          "part": "ppt/media/image13.png",
+          "width": 800,
+          "height": 341,
+          "format": "PNG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 3,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 2
+      }
+    },
+    {
+      "slide": 29,
+      "part": "ppt/slides/slide29.xml",
+      "text_count": 1,
+      "texts": [
+        "넌 나에게 모욕감을 줬어"
+      ],
+      "notes": [],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId2",
+          "target": "../media/image13.png",
+          "part": "ppt/media/image13.png",
+          "width": 800,
+          "height": 341,
+          "format": "PNG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 2,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 1
+      }
+    },
+    {
+      "slide": 30,
+      "part": "ppt/slides/slide30.xml",
+      "text_count": 1,
+      "texts": [
+        "거 ___ 딱 좋은 날씨네"
+      ],
+      "notes": [],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId2",
+          "target": "../media/image14.jpeg",
+          "part": "ppt/media/image14.jpeg",
+          "width": 1200,
+          "height": 800,
+          "format": "JPEG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 3,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 2
+      }
+    },
+    {
+      "slide": 31,
+      "part": "ppt/slides/slide31.xml",
+      "text_count": 1,
+      "texts": [
+        "거 죽기 딱 좋은 날씨네"
+      ],
+      "notes": [],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId2",
+          "target": "../media/image14.jpeg",
+          "part": "ppt/media/image14.jpeg",
+          "width": 1200,
+          "height": 800,
+          "format": "JPEG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 2,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 1
+      }
+    },
+    {
+      "slide": 32,
+      "part": "ppt/slides/slide32.xml",
+      "text_count": 1,
+      "texts": [
+        "싸늘하다. 비수가 날아와 ___"
+      ],
+      "notes": [],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId2",
+          "target": "../media/image15.jpeg",
+          "part": "ppt/media/image15.jpeg",
+          "width": 1200,
+          "height": 675,
+          "format": "JPEG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 3,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 2
+      }
+    },
+    {
+      "slide": 33,
+      "part": "ppt/slides/slide33.xml",
+      "text_count": 1,
+      "texts": [
+        "싸늘하다. 비수가 날아와 꽂힌다"
+      ],
+      "notes": [],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId2",
+          "target": "../media/image15.jpeg",
+          "part": "ppt/media/image15.jpeg",
+          "width": 1200,
+          "height": 675,
+          "format": "JPEG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 2,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 1
+      }
+    },
+    {
+      "slide": 34,
+      "part": "ppt/slides/slide34.xml",
+      "text_count": 1,
+      "texts": [
+        "___!___!"
+      ],
+      "notes": [],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId2",
+          "target": "../media/image16.jpeg",
+          "part": "ppt/media/image16.jpeg",
+          "width": 1280,
+          "height": 720,
+          "format": "JPEG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 3,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 2
+      }
+    },
+    {
+      "slide": 35,
+      "part": "ppt/slides/slide35.xml",
+      "text_count": 1,
+      "texts": [
+        "드루와!드루와!"
+      ],
+      "notes": [],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId2",
+          "target": "../media/image16.jpeg",
+          "part": "ppt/media/image16.jpeg",
+          "width": 1280,
+          "height": 720,
+          "format": "JPEG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 2,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 1
+      }
+    },
+    {
+      "slide": 36,
+      "part": "ppt/slides/slide36.xml",
+      "text_count": 1,
+      "texts": [
+        "묻고 __로 가!"
+      ],
+      "notes": [],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId2",
+          "target": "../media/image17.jpeg",
+          "part": "ppt/media/image17.jpeg",
+          "width": 1333,
+          "height": 800,
+          "format": "JPEG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 3,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 2
+      }
+    },
+    {
+      "slide": 37,
+      "part": "ppt/slides/slide37.xml",
+      "text_count": 1,
+      "texts": [
+        "묻고 더블로 가!"
+      ],
+      "notes": [],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId2",
+          "target": "../media/image17.jpeg",
+          "part": "ppt/media/image17.jpeg",
+          "width": 1333,
+          "height": 800,
+          "format": "JPEG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 2,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 1
+      }
+    },
+    {
+      "slide": 38,
+      "part": "ppt/slides/slide38.xml",
+      "text_count": 1,
+      "texts": [
+        "곤드레~___?"
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 1,
+      "shape_tags": {
+        "sp": 1
+      }
+    },
+    {
+      "slide": 39,
+      "part": "ppt/slides/slide39.xml",
+      "text_count": 1,
+      "texts": [
+        "곤드레~만드레"
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 1,
+      "shape_tags": {
+        "sp": 1
+      }
+    },
+    {
+      "slide": 40,
+      "part": "ppt/slides/slide40.xml",
+      "text_count": 1,
+      "texts": [
+        "나는 이제 지쳤어요 ㅇㅇ?"
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 1,
+      "shape_tags": {
+        "sp": 1
+      }
+    },
+    {
+      "slide": 41,
+      "part": "ppt/slides/slide41.xml",
+      "text_count": 1,
+      "texts": [
+        "머리부터 발끝까지?"
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 1,
+      "shape_tags": {
+        "sp": 1
+      }
+    },
+    {
+      "slide": 42,
+      "part": "ppt/slides/slide42.xml",
+      "text_count": 1,
+      "texts": [
+        "패턴 학습"
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 1,
+      "shape_tags": {
+        "sp": 1
+      }
+    },
+    {
+      "slide": 43,
+      "part": "ppt/slides/slide43.xml",
+      "text_count": 1,
+      "texts": [
+        "수십억 개 파라미터를 통해"
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 1,
+      "shape_tags": {
+        "sp": 1
+      }
+    },
+    {
+      "slide": 44,
+      "part": "ppt/slides/slide44.xml",
+      "text_count": 1,
+      "texts": [
+        "ㅈㅎㅅ을 높이려고"
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 1,
+      "shape_tags": {
+        "sp": 1
+      }
+    },
+    {
+      "slide": 45,
+      "part": "ppt/slides/slide45.xml",
+      "text_count": 1,
+      "texts": [
+        "정확성을 높이려고"
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 1,
+      "shape_tags": {
+        "sp": 1
+      }
+    },
+    {
+      "slide": 46,
+      "part": "ppt/slides/slide46.xml",
+      "text_count": 1,
+      "texts": [
+        "AI는 결과에 관심이 없어요!"
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 1,
+      "shape_tags": {
+        "sp": 1
+      }
+    },
+    {
+      "slide": 47,
+      "part": "ppt/slides/slide47.xml",
+      "text_count": 1,
+      "texts": [
+        "목적은 오로지 단 하나, 당신의 ㅇㅇ"
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 1,
+      "shape_tags": {
+        "sp": 1
+      }
+    },
+    {
+      "slide": 48,
+      "part": "ppt/slides/slide48.xml",
+      "text_count": 1,
+      "texts": [
+        "목적은 오로지 단 하나, 당신의 O.K"
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 1,
+      "shape_tags": {
+        "sp": 1
+      }
+    },
+    {
+      "slide": 49,
+      "part": "ppt/slides/slide49.xml",
+      "text_count": 1,
+      "texts": [
+        "이게 활용에 대한 최고의 힌트!"
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 1,
+      "shape_tags": {
+        "sp": 1
+      }
+    },
+    {
+      "slide": 50,
+      "part": "ppt/slides/slide50.xml",
+      "text_count": 1,
+      "texts": [
+        "좋은 결과를 위해서는..."
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 1,
+      "shape_tags": {
+        "sp": 1
+      }
+    },
+    {
+      "slide": 51,
+      "part": "ppt/slides/slide51.xml",
+      "text_count": 1,
+      "texts": [
+        "좋은 결과를 위해서는...정확함이 중요"
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 1,
+      "shape_tags": {
+        "sp": 1
+      }
+    },
+    {
+      "slide": 52,
+      "part": "ppt/slides/slide52.xml",
+      "text_count": 2,
+      "texts": [
+        "https://m.site.naver.com/1S53f",
+        "대소문자 구분(f 소문자)"
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 2,
+      "shape_tags": {
+        "sp": 2
+      }
+    },
+    {
+      "slide": 53,
+      "part": "ppt/slides/slide53.xml",
+      "text_count": 2,
+      "texts": [
+        "https://m.site.naver.com/1UBCS",
+        "대소문자 구분(UBCS대문자)"
+      ],
+      "notes": [
+        "53"
+      ],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId4",
+          "target": "../media/image6.jpg",
+          "part": "ppt/media/image6.jpg",
+          "width": 357,
+          "height": 357,
+          "format": "JPEG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 2,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 1
+      }
+    },
+    {
+      "slide": 54,
+      "part": "ppt/slides/slide54.xml",
+      "text_count": 1,
+      "texts": [
+        "도형을 설명하고 그려봅시다."
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 1,
+      "shape_tags": {
+        "sp": 1
+      }
+    },
+    {
+      "slide": 55,
+      "part": "ppt/slides/slide55.xml",
+      "text_count": 6,
+      "texts": [
+        "설명을 듣고 도형을 그려 주시면 됩니다.",
+        "- 오직 설명자만 도형을 볼 수 있습니다.",
+        "- 설명자는 말로만 설명하고 상대는 말 할 수 없습니다.",
+        "- 제한 된 시간 안에 도형을 그려 주시면 됩니다.",
+        "도형그리기",
+        "55"
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 3,
+      "shape_tags": {
+        "sp": 3
+      }
+    },
+    {
+      "slide": 56,
+      "part": "ppt/slides/slide56.xml",
+      "text_count": 2,
+      "texts": [
+        "도형그리기",
+        "56"
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 4,
+      "shape_tags": {
+        "sp": 4
+      }
+    },
+    {
+      "slide": 57,
+      "part": "ppt/slides/slide57.xml",
+      "text_count": 2,
+      "texts": [
+        "도형그리기",
+        "57"
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 5,
+      "shape_tags": {
+        "sp": 5
+      }
+    },
+    {
+      "slide": 58,
+      "part": "ppt/slides/slide58.xml",
+      "text_count": 3,
+      "texts": [
+        "5",
+        "도형그리기",
+        "58"
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 5,
+      "shape_tags": {
+        "sp": 5
+      }
+    },
+    {
+      "slide": 59,
+      "part": "ppt/slides/slide59.xml",
+      "text_count": 0,
+      "texts": [],
+      "notes": [],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId2",
+          "target": "../media/image18.jpg",
+          "part": "ppt/media/image18.jpg",
+          "width": 2700,
+          "height": 3339,
+          "format": "JPEG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 1,
+      "shape_tags": {
+        "pic": 1
+      }
+    },
+    {
+      "slide": 60,
+      "part": "ppt/slides/slide60.xml",
+      "text_count": 0,
+      "texts": [],
+      "notes": [],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId2",
+          "target": "../media/image18.jpg",
+          "part": "ppt/media/image18.jpg",
+          "width": 2700,
+          "height": 3339,
+          "format": "JPEG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 1,
+      "shape_tags": {
+        "pic": 1
+      }
+    },
+    {
+      "slide": 61,
+      "part": "ppt/slides/slide61.xml",
+      "text_count": 13,
+      "texts": [
+        "의미 정렬",
+        "04",
+        "예쁜 집",
+        "같은 단어를 써도, 각자 떠올리는 기준은 전혀 다를 수 있다.",
+        "채광",
+        "빛이 잘 들어오는 집",
+        "동선",
+        "생활이 편한 집",
+        "감도",
+        "미감이 살아 있는 집",
+        "안정",
+        "가족이 편안한 집",
+        "좋은 결과도 마찬가지다. ‘잘 된 보고’, ‘좋은 설명’, ‘실용적 정리’도 사람마다 뜻이 다를 수 있다."
+      ],
+      "notes": [
+        "61"
+      ],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 23,
+      "shape_tags": {
+        "sp": 23
+      }
+    },
+    {
+      "slide": 62,
+      "part": "ppt/slides/slide62.xml",
+      "text_count": 16,
+      "texts": [
+        "질문 사다리",
+        "05",
+        "원하는 결과는 바로 나오지 않는다",
+        "질문을 쪼개야 비로소 내가 진짜 원하는 결과가 보인다.",
+        "조금 더 수월해졌으면 하는 장면은?",
+        "그 장면이 왜 번거로운가?",
+        "그 일이 잘 되면 무엇이 달라지는가?",
+        "그게 왜 중요한가?",
+        "당신에게 성과란 무엇인가?",
+        "누가 무엇을 인정해주면 잘 된 것인가?",
+        "결국 진짜 원하는 결과는 무엇인가?",
+        "예시",
+        "보고서를 쓰는 것",
+        "→",
+        "상사가 방향을 한 번에 이해하는 것",
+        "겉으로 원하는 것과 진짜 원하는 결과는 다를 수 있다."
+      ],
+      "notes": [
+        "62"
+      ],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 12,
+      "shape_tags": {
+        "sp": 12
+      }
+    },
+    {
+      "slide": 63,
+      "part": "ppt/slides/slide63.xml",
+      "text_count": 14,
+      "texts": [
+        "07",
+        "진단 없이 처방부터 ?",
+        "중요한 문제일수록 먼저 맥락을 설명하고, 전문가가 다시 질문하게 한다.",
+        "잘못된 접근",
+        "이 자료 쉽게 설명해줘",
+        "바로 답을 요구한다",
+        "청자도 목적도 빠져 있다",
+        "결과는 그럴듯하지만 내 상황과 어긋날 가능성이 크다",
+        "더 나은 접근",
+        "지금 바로 답하지 말고,",
+        "먼저 내가 무엇을 하려는지 질문해줘",
+        "맥락을 묻는다",
+        "청자와 제약을 확인한다",
+        "그다음에야 더 맞는 구조와 설명이 나온다"
+      ],
+      "notes": [
+        "63"
+      ],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 15,
+      "shape_tags": {
+        "sp": 15
+      }
+    },
+    {
+      "slide": 64,
+      "part": "ppt/slides/slide64.xml",
+      "text_count": 15,
+      "texts": [
+        "실습",
+        "11",
+        "실습 1 | 바로 답 요청 vs 인터뷰형 협업",
+        "같은 장면을 두 방식으로 시도하고, 무엇이 더 맞는지 비교한다.",
+        "Before",
+        "이 자료 쉽게 설명해줘",
+        "답은 바로 나온다.",
+        "하지만 내 목적, 청자, 제약은 빠져 있다.",
+        "결과는 그럴듯하지만 어긋나기 쉽다.",
+        "After",
+        "지금 바로 답하지 말고,",
+        "먼저 내가 무엇을 하려는지 질문해줘",
+        "내 목적을 확인한다.",
+        "누가 듣는지, 무엇을 놓치면 안 되는지 확인한다.",
+        "그다음에야 더 맞는 설명과 정리가 나온다."
+      ],
+      "notes": [
+        "64"
+      ],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 16,
+      "shape_tags": {
+        "sp": 16
+      }
+    },
+    {
+      "slide": 65,
+      "part": "ppt/slides/slide65.xml",
+      "text_count": 14,
+      "texts": [
+        "철학",
+        "09",
+        "이 과정의 철학",
+        "기능보다 방향을 먼저 세워야 노하우가 얕아지지 않는다.",
+        "1",
+        "목적이 먼저다",
+        "AI 활용의 출발점은 답이 아니라 목적이다.",
+        "2",
+        "AI는 인터뷰와 점검의 파트너다",
+        "좋은 활용은 AI가 먼저 질문하고, 다시 피드백하는 흐름에서 나온다.",
+        "3",
+        "핵심은 더 나은 판단과 실행이다",
+        "문서 한 개를 빨리 만드는 것보다, 더 정확히 판단하고 움직이는 것이 중요하다.",
+        "철학은 방향이고, 프레임은 지도이며, 노하우는 운전법이다."
+      ],
+      "notes": [
+        "65"
+      ],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 22,
+      "shape_tags": {
+        "sp": 22
+      }
+    },
+    {
+      "slide": 66,
+      "part": "ppt/slides/slide66.xml",
+      "text_count": 19,
+      "texts": [
+        "직군별 장면",
+        "06",
+        "실습용 장면",
+        "영업 / 고객 대응",
+        "고객 미팅 준비",
+        "기술자료 쉽게 설명",
+        "제안 논리 정리",
+        "R&D / 공정 / 설계",
+        "논문·기술자료 비교",
+        "원인 가설 정리",
+        "다음 검토 방향 설정",
+        "품질 / TEST / EHS",
+        "이슈 원인 정리",
+        "리스크 점검",
+        "액션 우선순위 정리",
+        "기획 / IT / 인사",
+        "트렌드 해석",
+        "보고 구조화",
+        "내부 자료 연결"
+      ],
+      "notes": [
+        "66"
+      ],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 21,
+      "shape_tags": {
+        "sp": 21
+      }
+    },
+    {
+      "slide": 67,
+      "part": "ppt/slides/slide67.xml",
+      "text_count": 2,
+      "texts": [
+        "AI 활용 치트키",
+        "1. 인터뷰"
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 1,
+      "shape_tags": {
+        "sp": 1
+      }
+    },
+    {
+      "slide": 68,
+      "part": "ppt/slides/slide68.xml",
+      "text_count": 6,
+      "texts": [
+        "내가 뭔가를 진행하려고 하거든?",
+        "지금 바로 답하지 말고,",
+        "내가 진짜 왜 하려는지,",
+        "무엇을 원하고, 무엇을 어떻게 하려는지",
+        "더 정확히 파악할 수 있도록",
+        "먼저 5개의 질문을 해줘."
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 1,
+      "shape_tags": {
+        "sp": 1
+      }
+    },
+    {
+      "slide": 69,
+      "part": "ppt/slides/slide69.xml",
+      "text_count": 2,
+      "texts": [
+        "https://prompt-cheatsheet.netlify.app/",
+        "https://m.site.naver.com/25gl5"
+      ],
+      "notes": [],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId2",
+          "target": "../media/image19.png",
+          "part": "ppt/media/image19.png",
+          "width": 224,
+          "height": 224,
+          "format": "PNG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 3,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 2
+      }
+    },
+    {
+      "slide": 70,
+      "part": "ppt/slides/slide70.xml",
+      "text_count": 5,
+      "texts": [
+        "자판기 대신 전문가로",
+        "상황을 잘 설명하라",
+        "명령서부터 만들어라",
+        "인터뷰로 만들어라",
+        "구체적인 프레임(CRAFT-O)"
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 1,
+      "shape_tags": {
+        "sp": 1
+      }
+    },
+    {
+      "slide": 71,
+      "part": "ppt/slides/slide71.xml",
+      "text_count": 1,
+      "texts": [
+        "메타 프롬프트 엔지니어링"
+      ],
+      "notes": [
+        "71"
+      ],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId3",
+          "target": "../media/image20.png",
+          "part": "ppt/media/image20.png",
+          "width": 1440,
+          "height": 2160,
+          "format": "PNG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 3,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 2
+      }
+    },
+    {
+      "slide": 72,
+      "part": "ppt/slides/slide72.xml",
+      "text_count": 3,
+      "texts": [
+        "메타 프롬프트 엔지니어링이란?",
+        "\"일 잘하는 파트너를 잘 만드는 명령어\"를 AI와 함께 작성해 주는 작업!",
+        "단순히 AI에게 질문하는 것을 넘어, 우리의 의도를 AI가 가장 잘 이해하고 최고의 결과물을 낼 수 있도록 정교한 지시와 가이드를 함께 설계하는 과정을 의미합니다. 이는 AI를 단순한 도구가 아닌, 진정한 협력 파트너로 만드는 핵심적인 기술입니다."
+      ],
+      "notes": [
+        "72"
+      ],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId3",
+          "target": "../media/image21.png",
+          "part": "ppt/media/image21.png",
+          "width": 2686,
+          "height": 1346,
+          "format": "PNG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 5,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 4
+      }
+    },
+    {
+      "slide": 73,
+      "part": "ppt/slides/slide73.xml",
+      "text_count": 0,
+      "texts": [],
+      "notes": [
+        "73"
+      ],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId3",
+          "target": "../media/image22.png",
+          "part": "ppt/media/image22.png",
+          "width": 1300,
+          "height": 1300,
+          "format": "PNG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 1,
+      "shape_tags": {
+        "pic": 1
+      }
+    },
+    {
+      "slide": 74,
+      "part": "ppt/slides/slide74.xml",
+      "text_count": 0,
+      "texts": [],
+      "notes": [
+        "74"
+      ],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId3",
+          "target": "../media/image23.png",
+          "part": "ppt/media/image23.png",
+          "width": 1440,
+          "height": 2162,
+          "format": "PNG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 1,
+      "shape_tags": {
+        "pic": 1
+      }
+    },
+    {
+      "slide": 75,
+      "part": "ppt/slides/slide75.xml",
+      "text_count": 0,
+      "texts": [],
+      "notes": [
+        "75"
+      ],
+      "image_count": 2,
+      "images": [
+        {
+          "rid": "rId3",
+          "target": "../media/image24.png",
+          "part": "ppt/media/image24.png",
+          "width": 1440,
+          "height": 2160,
+          "format": "PNG"
+        },
+        {
+          "rid": "rId4",
+          "target": "../media/image23.png",
+          "part": "ppt/media/image23.png",
+          "width": 1440,
+          "height": 2162,
+          "format": "PNG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 2,
+      "shape_tags": {
+        "pic": 2
+      }
+    },
+    {
+      "slide": 76,
+      "part": "ppt/slides/slide76.xml",
+      "text_count": 0,
+      "texts": [],
+      "notes": [
+        "76"
+      ],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId3",
+          "target": "../media/image25.png",
+          "part": "ppt/media/image25.png",
+          "width": 1440,
+          "height": 2160,
+          "format": "PNG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 1,
+      "shape_tags": {
+        "pic": 1
+      }
+    },
+    {
+      "slide": 77,
+      "part": "ppt/slides/slide77.xml",
+      "text_count": 4,
+      "texts": [
+        "메타 프롬프트 엔지니어링이란?",
+        "\"일 잘하는 파트너를 잘 만드는 명령어\"를 AI와 함께 작성해 주는 작업!",
+        "단순히 AI에게 질문하는 것을 넘어, 우리의 의도를 AI가 가장 잘 이해하고 최고의 결과물을 낼 수 있도록 정교한 지시와 가이드를 함께 설계하는 과정을 의미합니다.",
+        "이는 AI를 단순한 도구가 아닌, 진정한 협력 파트너로 만드는 핵심적인 기술입니다."
+      ],
+      "notes": [
+        "77"
+      ],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId3",
+          "target": "../media/image21.png",
+          "part": "ppt/media/image21.png",
+          "width": 2686,
+          "height": 1346,
+          "format": "PNG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 5,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 4
+      }
+    },
+    {
+      "slide": 78,
+      "part": "ppt/slides/slide78.xml",
+      "text_count": 5,
+      "texts": [
+        "자판기 대신 전문가로",
+        "상황을 잘 설명하라",
+        "명령서부터 만들어라",
+        "인터뷰로 만들어라",
+        "구체적인 프레임(CRAFT-O)"
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 1,
+      "shape_tags": {
+        "sp": 1
+      }
+    },
+    {
+      "slide": 79,
+      "part": "ppt/slides/slide79.xml",
+      "text_count": 2,
+      "texts": [
+        "메타프롬프트 → CRAFT-O 연결",
+        "📌 통역관 지니 = CRAFT-O1) C: Context – 내가 처한 상황과 왜 이걸 하는지2) R: Role – 어떤 전문가 역할을 원하나3) A: Audience – 결과를 누구에게 보여줄지4) F: Format – 원하는 형식과 구조5) T: Tone & Style – 어떤 톤으로 표현할지6) O: Option – 제약 조건, 추가 옵션➡ AI가 스스로 질문을 만들어 나에게 묻고, 내가 답만 하면 완벽한 프롬프트가 완성"
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 2,
+      "shape_tags": {
+        "sp": 2
+      }
+    },
+    {
+      "slide": 80,
+      "part": "ppt/slides/slide80.xml",
+      "text_count": 13,
+      "texts": [
+        "CRAFT-O 프레임워크",
+        "C – Context",
+        "맥락",
+        "R – Role",
+        "역할",
+        "A – Audience",
+        "청중",
+        "F – Format",
+        "형식",
+        "T – Tone & Style",
+        "어조",
+        "O – Option",
+        "옵션/제약"
+      ],
+      "notes": [
+        "80"
+      ],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 19,
+      "shape_tags": {
+        "sp": 19
+      }
+    },
+    {
+      "slide": 81,
+      "part": "ppt/slides/slide81.xml",
+      "text_count": 16,
+      "texts": [
+        "프레임",
+        "10",
+        "CRAFTO는 생각 정리 틀이다",
+        "프롬프트 공식이 아니라, 내 생각을 빠뜨리지 않고 전달하는 구조다.",
+        "Context",
+        "지금 어떤 상황인가",
+        "Role",
+        "AI는 어떤 역할을 해야 하는가",
+        "Audience",
+        "누가 이 결과를 보는가",
+        "Format",
+        "어떤 형태로 받으면 바로 쓸 수 있는가",
+        "Tone",
+        "어느 수준과 말투가 필요한가",
+        "Option",
+        "제약, 금지선, 선택 기준은 무엇인가"
+      ],
+      "notes": [
+        "81"
+      ],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 30,
+      "shape_tags": {
+        "sp": 30
+      }
+    },
+    {
+      "slide": 82,
+      "part": "ppt/slides/slide82.xml",
+      "text_count": 7,
+      "texts": [
+        "C – Context",
+        "이 일을 통해 꼭 얻고 싶은 결과는 무엇인가요?",
+        "명확한 목표와 기대하는 성과를 정의하여 AI가 정확한 방향으로 도움을 줄 수 있도록 합니다.",
+        "왜 지금 이걸 해야 하나요?",
+        "현재 상황의 긴급성과 중요성을 설명하여 AI가 우선순위를 이해할 수 있게 합니다.",
+        "이 일이 끝나면 무엇이 달라지길 바라나요?",
+        "최종 결과물이 가져올 변화와 영향을 구체적으로 제시합니다."
+      ],
+      "notes": [
+        "82"
+      ],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId3",
+          "target": "../media/image26.png",
+          "part": "ppt/media/image26.png",
+          "width": 1440,
+          "height": 2160,
+          "format": "PNG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 11,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 10
+      }
+    },
+    {
+      "slide": 83,
+      "part": "ppt/slides/slide83.xml",
+      "text_count": 9,
+      "texts": [
+        "R – Role",
+        "AI가 어떤 역할로 도와주면 좋겠나요?",
+        "분석가",
+        "보고서 작성자",
+        "코치",
+        "컨설턴트",
+        "전문가",
+        "AI의 역할을 명확히 정의하면 더욱 전문적이고 맞춤형 답변을 받을 수 있습니다.",
+        "AI가 어떤 경력과 능력을 지녀야 하나요?"
+      ],
+      "notes": [
+        "83"
+      ],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId3",
+          "target": "../media/image27.png",
+          "part": "ppt/media/image27.png",
+          "width": 1694,
+          "height": 1694,
+          "format": "PNG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 10,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 9
+      }
+    },
+    {
+      "slide": 84,
+      "part": "ppt/slides/slide84.xml",
+      "text_count": 5,
+      "texts": [
+        "A – Audience",
+        "이 결과를 누가 보나요?",
+        "최종 수신자의 특성과 배경을 파악하여 적절한 수준과 스타일로 내용을 조정합니다.",
+        "그 사람이 원하는 건 무엇인가요?",
+        "청중의 니즈와 기대사항을 이해하여 그들이 원하는 정보와 형태로 결과물을 제공합니다."
+      ],
+      "notes": [
+        "84"
+      ],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId3",
+          "target": "../media/image28.png",
+          "part": "ppt/media/image28.png",
+          "width": 1440,
+          "height": 2160,
+          "format": "PNG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 8,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 7
+      }
+    },
+    {
+      "slide": 85,
+      "part": "ppt/slides/slide85.xml",
+      "text_count": 8,
+      "texts": [
+        "F – Format",
+        "표",
+        "데이터를 체계적으로 정리하여 비교 분석이 용이한 형태",
+        "요약",
+        "핵심 내용을 간결하게 정리한 축약된 형태",
+        "보고서",
+        "상세한 분석과 설명이 포함된 완전한 문서 형태",
+        "결과를 어떤 형태로 보고 싶으세요? 목적에 맞는 적절한 형식을 선택하는 것이 중요합니다."
+      ],
+      "notes": [
+        "85"
+      ],
+      "image_count": 4,
+      "images": [
+        {
+          "rid": "rId3",
+          "target": "../media/image29.png",
+          "part": "ppt/media/image29.png",
+          "width": 1440,
+          "height": 2160,
+          "format": "PNG"
+        },
+        {
+          "rid": "rId4",
+          "target": "../media/image30.png",
+          "part": "ppt/media/image30.png",
+          "width": 130,
+          "height": 130,
+          "format": "PNG"
+        },
+        {
+          "rid": "rId5",
+          "target": "../media/image31.png",
+          "part": "ppt/media/image31.png",
+          "width": 130,
+          "height": 130,
+          "format": "PNG"
+        },
+        {
+          "rid": "rId6",
+          "target": "../media/image32.png",
+          "part": "ppt/media/image32.png",
+          "width": 130,
+          "height": 130,
+          "format": "PNG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 12,
+      "shape_tags": {
+        "pic": 4,
+        "sp": 8
+      }
+    },
+    {
+      "slide": 86,
+      "part": "ppt/slides/slide86.xml",
+      "text_count": 8,
+      "texts": [
+        "T – Tone & Style",
+        "격식 있게",
+        "공식적이고 전문적인 어조로 신뢰성과 권위를 강조",
+        "간결하게",
+        "핵심만 담아 명확하고 효율적인 커뮤니케이션",
+        "데이터 중심으로",
+        "객관적 사실과 수치를 바탕으로 한 논리적 접근",
+        "어떤 톤으로 표현되면 좋을까요? 상황과 청중에 맞는 적절한 어조를 선택해야 합니다."
+      ],
+      "notes": [
+        "86"
+      ],
+      "image_count": 4,
+      "images": [
+        {
+          "rid": "rId3",
+          "target": "../media/image33.png",
+          "part": "ppt/media/image33.png",
+          "width": 1440,
+          "height": 2160,
+          "format": "PNG"
+        },
+        {
+          "rid": "rId4",
+          "target": "../media/image34.png",
+          "part": "ppt/media/image34.png",
+          "width": 52,
+          "height": 66,
+          "format": "PNG"
+        },
+        {
+          "rid": "rId5",
+          "target": "../media/image35.png",
+          "part": "ppt/media/image35.png",
+          "width": 52,
+          "height": 66,
+          "format": "PNG"
+        },
+        {
+          "rid": "rId6",
+          "target": "../media/image36.png",
+          "part": "ppt/media/image36.png",
+          "width": 52,
+          "height": 66,
+          "format": "PNG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 15,
+      "shape_tags": {
+        "pic": 4,
+        "sp": 11
+      }
+    },
+    {
+      "slide": 87,
+      "part": "ppt/slides/slide87.xml",
+      "text_count": 10,
+      "texts": [
+        "O – Option",
+        "글자 수 제한",
+        "최소/최대 글자 수나 페이지 수 등의 분량 조건",
+        "언어 설정",
+        "한국어, 영어 등 사용할 언어와 전문 용어 수준",
+        "특정 데이터 포함",
+        "반드시 포함해야 할 정보나 제외해야 할 내용",
+        "기타 제약사항",
+        "마감일, 참고자료, 승인 절차 등 추가 고려사항",
+        "추가 조건이나 제약이 있나요? 모든 요구사항을 명확히 해야 완벽한 결과를 얻을 수 있습니다."
+      ],
+      "notes": [
+        "87"
+      ],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId3",
+          "target": "../media/image37.png",
+          "part": "ppt/media/image37.png",
+          "width": 3840,
+          "height": 652,
+          "format": "PNG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 19,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 18
+      }
+    },
+    {
+      "slide": 88,
+      "part": "ppt/slides/slide88.xml",
+      "text_count": 7,
+      "texts": [
+        "최종 프롬프트 완성",
+        "C~O 답변 통합",
+        "지금까지 작성한 모든 요소를 하나의 완성된 프롬프트로 결합",
+        "AI 입력 및 실행",
+        "완성된 프롬프트를 AI에 입력하고 결과를 확인",
+        "결과 비교 및 토론",
+        "팀별 결과를 비교하고 개선점을 논의하여 더 나은 프롬프트 작성법 학습"
+      ],
+      "notes": [
+        "88"
+      ],
+      "image_count": 4,
+      "images": [
+        {
+          "rid": "rId3",
+          "target": "../media/image38.png",
+          "part": "ppt/media/image38.png",
+          "width": 1440,
+          "height": 2160,
+          "format": "PNG"
+        },
+        {
+          "rid": "rId4",
+          "target": "../media/image39.png",
+          "part": "ppt/media/image39.png",
+          "width": 260,
+          "height": 312,
+          "format": "PNG"
+        },
+        {
+          "rid": "rId5",
+          "target": "../media/image40.png",
+          "part": "ppt/media/image40.png",
+          "width": 260,
+          "height": 312,
+          "format": "PNG"
+        },
+        {
+          "rid": "rId6",
+          "target": "../media/image41.png",
+          "part": "ppt/media/image41.png",
+          "width": 260,
+          "height": 312,
+          "format": "PNG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 11,
+      "shape_tags": {
+        "pic": 4,
+        "sp": 7
+      }
+    },
+    {
+      "slide": 89,
+      "part": "ppt/slides/slide89.xml",
+      "text_count": 2,
+      "texts": [
+        "https://m.site.naver.com/1UBCS",
+        "대소문자 구분(UBCS대문자)"
+      ],
+      "notes": [
+        "89"
+      ],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId4",
+          "target": "../media/image6.jpg",
+          "part": "ppt/media/image6.jpg",
+          "width": 357,
+          "height": 357,
+          "format": "JPEG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 2,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 1
+      }
+    },
+    {
+      "slide": 90,
+      "part": "ppt/slides/slide90.xml",
+      "text_count": 3,
+      "texts": [
+        "메타프롬프팅 CRAFTO",
+        "역할 수행 질문",
+        "피드백"
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 1,
+      "shape_tags": {
+        "sp": 1
+      }
+    },
+    {
+      "slide": 91,
+      "part": "ppt/slides/slide91.xml",
+      "text_count": 10,
+      "texts": [
+        "노하우",
+        "12",
+        "처음과 끝은 사람이 잡는다",
+        "AI에게 맡길 수 있는 것과 맡기면 안 되는 것을 구분해야 한다.",
+        "처음 10",
+        "중간 80",
+        "마지막 10",
+        "목적, 기준, 맥락",
+        "질문, 정리, 초안, 비교",
+        "선택, 검증, 책임"
+      ],
+      "notes": [
+        "91"
+      ],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 15,
+      "shape_tags": {
+        "sp": 15
+      }
+    },
+    {
+      "slide": 92,
+      "part": "ppt/slides/slide92.xml",
+      "text_count": 1,
+      "texts": [
+        "결과물, 피드백이 반드시 필요하다"
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 1,
+      "shape_tags": {
+        "sp": 1
+      }
+    },
+    {
+      "slide": 93,
+      "part": "ppt/slides/slide93.xml",
+      "text_count": 1,
+      "texts": [
+        "그 또한 AI가 할 수 있도록"
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 1,
+      "shape_tags": {
+        "sp": 1
+      }
+    },
+    {
+      "slide": 94,
+      "part": "ppt/slides/slide94.xml",
+      "text_count": 12,
+      "texts": [
+        "노하우",
+        "14",
+        "초안 다음에는 점검이 들어가야 한다",
+        "AI를 초안 생성기에서 비평가로 확장할 때 활용이 깊어진다.",
+        "메타인지",
+        "본질과 목적에 맞는가",
+        "레드팀",
+        "치명적 리스크는 무엇인가",
+        "심사위원",
+        "논리 비약은 없는가",
+        "전문가",
+        "더 나은 대안은 없는가"
+      ],
+      "notes": [
+        "94"
+      ],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 22,
+      "shape_tags": {
+        "sp": 22
+      }
+    },
+    {
+      "slide": 95,
+      "part": "ppt/slides/slide95.xml",
+      "text_count": 5,
+      "texts": [
+        "메타인지,",
+        "레드팀",
+        "깐깐한 심사위원.",
+        "해당분야 노련한 전문가",
+        "이 넷이 tf로서 해당 결과물을 점검하고 분석하며 토론을 하여 보완점을 찾아 제시한 후 개선안을 제안하게 해."
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 1,
+      "shape_tags": {
+        "sp": 1
+      }
+    },
+    {
+      "slide": 96,
+      "part": "ppt/slides/slide96.xml",
+      "text_count": 14,
+      "texts": [
+        "노하우",
+        "13",
+        "많이 만드는 것보다, 줄이고 끝내는 것이 중요하다",
+        "AI는 선택지를 늘리는 데 강하고, 사람은 끝내는 데 책임이 있다.",
+        "1",
+        "Problem",
+        "문제를 한 문장으로 잡는다",
+        "3",
+        "Solutions",
+        "실행 가능한 대안 3개를 본다",
+        "장단점을 비교한다",
+        "1",
+        "Recommendation",
+        "권고안 1개를 선택한다"
+      ],
+      "notes": [
+        "96"
+      ],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 23,
+      "shape_tags": {
+        "sp": 23
+      }
+    },
+    {
+      "slide": 97,
+      "part": "ppt/slides/slide97.xml",
+      "text_count": 2,
+      "texts": [
+        "나의 AI 비서는 '기억상실증?'",
+        "매번 자기소개를 반복하고 계신가요?"
+      ],
+      "notes": [
+        "97"
+      ],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId3",
+          "target": "../media/image42.png",
+          "part": "ppt/media/image42.png",
+          "width": 1440,
+          "height": 2160,
+          "format": "PNG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 3,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 2
+      }
+    },
+    {
+      "slide": 98,
+      "part": "ppt/slides/slide98.xml",
+      "text_count": 2,
+      "texts": [
+        "반복되는 설명, 소모되는 시간",
+        "\"이럴 거면 내가 하고 말지...\""
+      ],
+      "notes": [
+        "98"
+      ],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId3",
+          "target": "../media/image43.png",
+          "part": "ppt/media/image43.png",
+          "width": 1440,
+          "height": 2160,
+          "format": "PNG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 3,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 2
+      }
+    },
+    {
+      "slide": 99,
+      "part": "ppt/slides/slide99.xml",
+      "text_count": 7,
+      "texts": [
+        "AI 개인화란?",
+        "\"단골 카페 사장님처럼!\"",
+        "단골 카페 사장님",
+        "친근한 인사",
+        "맞춤형 서비스",
+        "메뉴 추천",
+        "고객 이름 기억"
+      ],
+      "notes": [
+        "99"
+      ],
+      "image_count": 2,
+      "images": [
+        {
+          "rid": "rId3",
+          "target": "../media/image44.png",
+          "part": "ppt/media/image44.png",
+          "width": 1440,
+          "height": 2160,
+          "format": "PNG"
+        },
+        {
+          "rid": "rId4",
+          "target": "../media/image45.png",
+          "part": "ppt/media/image45.png",
+          "width": 1984,
+          "height": 916,
+          "format": "PNG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 13,
+      "shape_tags": {
+        "pic": 6,
+        "sp": 7
+      }
+    },
+    {
+      "slide": 100,
+      "part": "ppt/slides/slide100.xml",
+      "text_count": 9,
+      "texts": [
+        "무엇이 달라질까요?",
+        "설정 전",
+        "반복 설명",
+        "일반적 결과",
+        "시간 낭비",
+        "설정 후",
+        "설명 불필요",
+        "맞춤 결과물",
+        "시간 절약"
+      ],
+      "notes": [
+        "100"
+      ],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 9,
+      "shape_tags": {
+        "sp": 9
+      }
+    },
+    {
+      "slide": 101,
+      "part": "ppt/slides/slide101.xml",
+      "text_count": 3,
+      "texts": [
+        "사용자 지정 지침",
+        "(Custom Instructions)",
+        "비서의 '인사기록카드'를 만드는 것과 같습니다."
+      ],
+      "notes": [
+        "101"
+      ],
+      "image_count": 2,
+      "images": [
+        {
+          "rid": "rId3",
+          "target": "../media/image50.png",
+          "part": "ppt/media/image50.png",
+          "width": 1440,
+          "height": 2160,
+          "format": "PNG"
+        },
+        {
+          "rid": "rId4",
+          "target": "../media/image51.png",
+          "part": "ppt/media/image51.png",
+          "width": 2400,
+          "height": 1936,
+          "format": "PNG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 4,
+      "shape_tags": {
+        "pic": 2,
+        "sp": 2
+      }
+    },
+    {
+      "slide": 102,
+      "part": "ppt/slides/slide102.xml",
+      "text_count": 7,
+      "texts": [
+        "Part 1. AI가 나에 대해 알아야 할 것",
+        "1",
+        "하는 일 (직업, 역할)",
+        "2",
+        "AI 사용 목적 (이메일, 글쓰기 등)",
+        "3",
+        "나의 스타일 (말투, 선호 형식)"
+      ],
+      "notes": [
+        "102"
+      ],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 10,
+      "shape_tags": {
+        "sp": 10
+      }
+    },
+    {
+      "slide": 103,
+      "part": "ppt/slides/slide103.xml",
+      "text_count": 5,
+      "texts": [
+        "Part 2. AI가 답변 시 지켜야 할 규칙",
+        "(예시) 항상 한국어로 답변",
+        "(예시) 전문가적이고 신뢰감 있는 어조 유지",
+        "(예시) 핵심 내용은 목록으로 정리",
+        "(예시) 답변 마지막에 추가 질문 유도"
+      ],
+      "notes": [
+        "103"
+      ],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 9,
+      "shape_tags": {
+        "sp": 9
+      }
+    },
+    {
+      "slide": 104,
+      "part": "ppt/slides/slide104.xml",
+      "text_count": 9,
+      "texts": [
+        "[실습] 챗GPT에 '사용자 지정 지침' 입력하기",
+        "01",
+        "이름 클릭",
+        "02",
+        "메뉴 선택",
+        "03",
+        "내용 붙여넣기",
+        "04",
+        "저장 버튼 클릭"
+      ],
+      "notes": [
+        "104"
+      ],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId3",
+          "target": "../media/image52.png",
+          "part": "ppt/media/image52.png",
+          "width": 1440,
+          "height": 2160,
+          "format": "PNG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 14,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 13
+      }
+    },
+    {
+      "slide": 105,
+      "part": "ppt/slides/slide105.xml",
+      "text_count": 1,
+      "texts": [
+        "AI도 단축키가 가능하다고??"
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 1,
+      "shape_tags": {
+        "sp": 1
+      }
+    },
+    {
+      "slide": 106,
+      "part": "ppt/slides/slide106.xml",
+      "text_count": 25,
+      "texts": [
+        "기술 / 트렌드 3단계",
+        "기술과 트렌드는",
+        "프롬프트에서 컨텍스트를 거쳐 하네스로",
+        "좋은 답을 뽑는 기술에서, 더 맞는 맥락을 설계하고, 결국 더 나은 실행 시스템을 묶는 방향으로 이동 중",
+        "1단계",
+        "프롬프트 엔지니어링",
+        "좋은 질문 문장을 만드는 단계",
+        "- 더 나은 답을 뽑기",
+        "- 역할과 형식 정하기",
+        "- 표현을 다듬기",
+        "2단계",
+        "컨텍스트 엔지니어링",
+        "더 맞는 맥락을 설계하는 단계",
+        "- 자료와 메모리 붙이기",
+        "- 청자와 제약 반영하기",
+        "- 일관된 기준 만들기",
+        "3단계",
+        "하네스 엔지니어링",
+        "도구와 흐름을 묶어 실제 업무 시스템으로",
+        "만드는 단계",
+        "- 여러 도구 연결하기",
+        "- 검증과 승인 넣기",
+        "- 실행 루프 설계하기",
+        "핵심은 ‘프롬프트를 잘 쓰는 것’에서 멈추지 않고,",
+        "‘맥락을 설계하고, 실행 시스템까지 묶는 것’으로 가는 흐름을 이해하는 것이다."
+      ],
+      "notes": [
+        "106"
+      ],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 23,
+      "shape_tags": {
+        "sp": 23
+      }
+    },
+    {
+      "slide": 107,
+      "part": "ppt/slides/slide107.xml",
+      "text_count": 23,
+      "texts": [
+        "이동수단 지도",
+        "16",
+        "어떤 장면에 어떤 이동수단이 맞는가",
+        "브랜드보다 목적을 먼저 보고, 그 목적에 맞는 도구를 배치한다.",
+        "일반 LLM",
+        "생각 열기",
+        "초안",
+        "구조화",
+        "소스 기반 AI",
+        "자료 기반 이해",
+        "비교",
+        "검토",
+        "딥리서치",
+        "외부 흐름 조사",
+        "최신 정보 탐색",
+        "에이전트형 AI",
+        "여러 단계 연결",
+        "흐름 설계",
+        "생성 서비스",
+        "화면",
+        "덱",
+        "이미지",
+        "영상 초안"
+      ],
+      "notes": [
+        "107"
+      ],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 26,
+      "shape_tags": {
+        "sp": 26
+      }
+    },
+    {
+      "slide": 108,
+      "part": "ppt/slides/slide108.xml",
+      "text_count": 32,
+      "texts": [
+        "대표 도구 예시",
+        "01",
+        "이러이러한 도구가 있습니다.",
+        "범용 LLM",
+        "ChatGPT / Claude / Gemini",
+        "생각 열기",
+        "초안",
+        "질문 설계",
+        "소스 기반",
+        "NotebookLM / LilysAI",
+        "자료 이해",
+        "비교",
+        "요약보다 검토",
+        "딥리서치",
+        "ChatGPT / Gemini / Perflexity",
+        "외부 흐름 조사",
+        "보고서형 리서치",
+        "워크스페이스",
+        "Microsoft 365 Copilot / Notion AI / Canva AI",
+        "일하는 공간 안에서",
+        "검색·정리·협업",
+        "발표 / UI 생성",
+        "Gamma / Genspark / Stitch",
+        "덱 초안",
+        "슬라이드 구조",
+        "화면 시안",
+        "이미지 / 영상",
+        "Midjourney / Seedance",
+        "비주얼 무드",
+        "영상 데모",
+        "표현 수단",
+        "핵심은 ‘어떤 툴이 최고인가’보다, ‘지금 내 목적에 어떤 이동수단이 가장 맞는가’를 판단하는 것이다."
+      ],
+      "notes": [
+        "108"
+      ],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 36,
+      "shape_tags": {
+        "sp": 36
+      }
+    },
+    {
+      "slide": 109,
+      "part": "ppt/slides/slide109.xml",
+      "text_count": 2,
+      "texts": [
+        "https://prompt-cheatsheet.netlify.app/",
+        "https://m.site.naver.com/25gl5"
+      ],
+      "notes": [],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId2",
+          "target": "../media/image19.png",
+          "part": "ppt/media/image19.png",
+          "width": 224,
+          "height": 224,
+          "format": "PNG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 3,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 2
+      }
+    },
+    {
+      "slide": 110,
+      "part": "ppt/slides/slide110.xml",
+      "text_count": 16,
+      "texts": [
+        "종합실습",
+        "18",
+        "종합실습 순서",
+        "막히지 않게 하기 위해, 아래 순서대로 짧게 채운다.",
+        "1. 내 업무 장면을 한 문장으로 쓴다",
+        "2. 진짜 원하는 결과를 다시 확인한다",
+        "3. CRAFTO를 짧게 채운다",
+        "4. AI에게 먼저 시킬 인터뷰 요청문을 쓴다",
+        "5. 10-80-10과 1-3-1로 역할과 선택을 정리한다",
+        "6. 피드백 포인트와 이동수단 조합을 적는다",
+        "마지막 체크",
+        "내가 직접 판단할 것은 무엇인가",
+        "이 항목이 비어 있으면,",
+        "AI가 너무 많은 것을 대신하게 된 것이다.",
+        "종합실습의 마지막은 항상",
+        "‘사람이 직접 잡아야 할 판단’으로 닫는다."
+      ],
+      "notes": [
+        "110"
+      ],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 12,
+      "shape_tags": {
+        "sp": 12
+      }
+    },
+    {
+      "slide": 111,
+      "part": "ppt/slides/slide111.xml",
+      "text_count": 0,
+      "texts": [],
+      "notes": [],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId2",
+          "target": "../media/image53.png",
+          "part": "ppt/media/image53.png",
+          "width": 1024,
+          "height": 1024,
+          "format": "PNG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 1,
+      "shape_tags": {
+        "pic": 1
+      }
+    },
+    {
+      "slide": 112,
+      "part": "ppt/slides/slide112.xml",
+      "text_count": 5,
+      "texts": [
+        "사자의 몸, 코끼리의 긴 코, 독수리의 깃털 날개, 그리고 인어의 꼬리를 가진 기발한 하이브리드 생물",
+        "두꺼운 검은 윤곽선과 채도 낮은 푸른색 계열로 표현된 플랫한 만화 스타일",
+        "빈티지 타투 또는 민속 삽화 같은 느낌의 그림체",
+        "배경 없이 오프 화이트 색상 위에 단독 배치",
+        "전체적으로 장난스럽고 초현실적인 분위기"
+      ],
+      "notes": [],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId2",
+          "target": "../media/image53.png",
+          "part": "ppt/media/image53.png",
+          "width": 1024,
+          "height": 1024,
+          "format": "PNG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 2,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 1
+      }
+    },
+    {
+      "slide": 113,
+      "part": "ppt/slides/slide113.xml",
+      "text_count": 10,
+      "texts": [
+        "성실성",
+        "통찰력",
+        "멍부",
+        "멍청하고 부지런",
+        "똑부",
+        "똑똑하고 부지런",
+        "멍게",
+        "멍청하고 게으른",
+        "똑게",
+        "똑똑하고 게으른"
+      ],
+      "notes": [],
+      "image_count": 4,
+      "images": [
+        {
+          "rid": "rId2",
+          "target": "../media/image54.png",
+          "part": "ppt/media/image54.png",
+          "width": 2489,
+          "height": 2477,
+          "format": "PNG"
+        },
+        {
+          "rid": "rId3",
+          "target": "../media/image55.png",
+          "part": "ppt/media/image55.png",
+          "width": 2485,
+          "height": 2473,
+          "format": "PNG"
+        },
+        {
+          "rid": "rId4",
+          "target": "../media/image56.png",
+          "part": "ppt/media/image56.png",
+          "width": 2486,
+          "height": 2474,
+          "format": "PNG"
+        },
+        {
+          "rid": "rId2",
+          "target": "../media/image54.png",
+          "part": "ppt/media/image54.png",
+          "width": 2489,
+          "height": 2477,
+          "format": "PNG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 10,
+      "shape_tags": {
+        "pic": 4,
+        "sp": 6
+      }
+    },
+    {
+      "slide": 114,
+      "part": "ppt/slides/slide114.xml",
+      "text_count": 9,
+      "texts": [
+        "똑게의 4요소",
+        "상황 파악",
+        "지금 내가 어디에 있는지, 왜 하는지를 명확히 이해합니다. 현재 상황을 정확히 진단하고 목적을 분명히 알고 있습니다.",
+        "명확한 결과",
+        "원하는 아웃풋의 형태를 머릿속에 그릴 수 있습니다. 구체적이고 명확한 결과물을 알고 있습니다.",
+        "자원 파악",
+        "내가 가진 데이터, 시간, 도구는 무엇인지 파악하고 있습니다. 활용 가능한 모든 리소스를 체계적으로 정리하여 알고 있습니다.",
+        "전달 능력",
+        "AI에게 어떻게 알려주고, 어떤 방식으로 대답 받을지 인지하고 있습니다.정확하고 효과적인 소통 전략을 잘 알고 있습니다."
+      ],
+      "notes": [
+        "114"
+      ],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId3",
+          "target": "../media/image57.png",
+          "part": "ppt/media/image57.png",
+          "width": 1440,
+          "height": 2160,
+          "format": "PNG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 14,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 13
+      }
+    },
+    {
+      "slide": 115,
+      "part": "ppt/slides/slide115.xml",
+      "text_count": 3,
+      "texts": [
+        "똑게의 비법 AI 공부시키기",
+        "AI에게 새로운 주제를 학습시키고, 대신 리서치하게 하라.",
+        "\"AI는 내 브레인스토밍 파트너이자 리서치 보조자다.\""
+      ],
+      "notes": [
+        "115"
+      ],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId3",
+          "target": "../media/image58.png",
+          "part": "ppt/media/image58.png",
+          "width": 1440,
+          "height": 2160,
+          "format": "PNG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 5,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 4
+      }
+    },
+    {
+      "slide": 116,
+      "part": "ppt/slides/slide116.xml",
+      "text_count": 16,
+      "texts": [
+        "AI 공부시키기의 단계",
+        "01",
+        "주제 정의",
+        "내가 알고 싶은 문제, 범위 명확히",
+        "02",
+        "자료 탐색 요청",
+        "기사, 논문, 보고서 요약 요청",
+        "03",
+        "정리 방식 지정",
+        "표, 리스트, 인사이트 중심",
+        "04",
+        "심화 질문",
+        "비교·분석·추가 탐색 요청",
+        "05",
+        "결과 재활용",
+        "요약본 저장해두고 반복 활용"
+      ],
+      "notes": [
+        "116"
+      ],
+      "image_count": 5,
+      "images": [
+        {
+          "rid": "rId3",
+          "target": "../media/image59.png",
+          "part": "ppt/media/image59.png",
+          "width": 1106,
+          "height": 6,
+          "format": "PNG"
+        },
+        {
+          "rid": "rId3",
+          "target": "../media/image59.png",
+          "part": "ppt/media/image59.png",
+          "width": 1106,
+          "height": 6,
+          "format": "PNG"
+        },
+        {
+          "rid": "rId3",
+          "target": "../media/image59.png",
+          "part": "ppt/media/image59.png",
+          "width": 1106,
+          "height": 6,
+          "format": "PNG"
+        },
+        {
+          "rid": "rId4",
+          "target": "../media/image60.png",
+          "part": "ppt/media/image60.png",
+          "width": 1686,
+          "height": 6,
+          "format": "PNG"
+        },
+        {
+          "rid": "rId4",
+          "target": "../media/image60.png",
+          "part": "ppt/media/image60.png",
+          "width": 1686,
+          "height": 6,
+          "format": "PNG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 21,
+      "shape_tags": {
+        "pic": 5,
+        "sp": 16
+      }
+    },
+    {
+      "slide": 117,
+      "part": "ppt/slides/slide117.xml",
+      "text_count": 6,
+      "texts": [
+        "자판기 대신 전문가로",
+        "상황을 잘 설명하라",
+        "명령서부터 만들어라",
+        "인터뷰로 만들어라",
+        "구체적인 프레임(CRAFT-O)",
+        "결과에 대한 피드백,131"
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 1,
+      "shape_tags": {
+        "sp": 1
+      }
+    },
+    {
+      "slide": 118,
+      "part": "ppt/slides/slide118.xml",
+      "text_count": 2,
+      "texts": [
+        "가장 강력한 학습도구, NotebookLM!",
+        "AI 기반의 스마트한 학습 도구인 NotebookLM은 방대한 자료를 빠르게 분석하고, 핵심 내용을 요약하며, 새로운 인사이트를 도출하는 데 최적화되어 있습니다."
+      ],
+      "notes": [
+        "118"
+      ],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId3",
+          "target": "../media/image61.png",
+          "part": "ppt/media/image61.png",
+          "width": 1440,
+          "height": 2160,
+          "format": "PNG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 3,
+      "shape_tags": {
+        "pic": 1,
+        "sp": 2
+      }
+    },
+    {
+      "slide": 119,
+      "part": "ppt/slides/slide119.xml",
+      "text_count": 10,
+      "texts": [
+        "공부시키기 좋은 툴",
+        "📚 NotebookLM 활용법",
+        "NotebookLM은 AI를 개인화된 지식 파트너로 만드는 최고의 도구입니다. 강의안, PDF, 개인 노트를 업로드하면 AI가 여러분의 자료를 완전히 이해하고 맞춤형 답변을 제공합니다.",
+        "학습 자료 활용",
+        "전공 노트와 과제 자료를 넣고 개인화된 Q&A를 만들어보세요.",
+        "연구 지원",
+        "포트폴리오나 논문 자료를 업로드하고 새로운 연구 질문을 추천받으세요.",
+        "지속적 성장",
+        "시간이 지날수록 점점 더 개인화된 지식 파트너로 발전합니다.",
+        "팁: 다양한 형태의 자료(텍스트, PDF, 이미지)를 함께 업로드하면 더 풍부한 대화가 가능합니다."
+      ],
+      "notes": [
+        "119"
+      ],
+      "image_count": 3,
+      "images": [
+        {
+          "rid": "rId3",
+          "target": "../media/image62.png",
+          "part": "ppt/media/image62.png",
+          "width": 3840,
+          "height": 454,
+          "format": "PNG"
+        },
+        {
+          "rid": "rId4",
+          "target": "../media/image63.png",
+          "part": "ppt/media/image63.png",
+          "width": 922,
+          "height": 922,
+          "format": "PNG"
+        },
+        {
+          "rid": "rId5",
+          "target": "../media/image64.png",
+          "part": "ppt/media/image64.png",
+          "width": 46,
+          "height": 36,
+          "format": "PNG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 17,
+      "shape_tags": {
+        "pic": 3,
+        "sp": 14
+      }
+    },
+    {
+      "slide": 120,
+      "part": "ppt/slides/slide120.xml",
+      "text_count": 11,
+      "texts": [
+        "실습",
+        "이제 직접 AI 파트너십을 경험해볼 시간입니다. 다음 단계를 따라 여러분만의 AI 파트너를 만들어보세요.",
+        "주제 선정",
+        "각자 현재 진행 중인 과제나 프로젝트 주제를 하나 떠올려보세요. 구체적이고 명확한 주제일수록 좋습니다.",
+        "질문 던지기",
+        "AI에게 \"이걸 잘하려면 어떤 질문부터 해야 할까?\"라고 물어보세요. AI의 관점에서 문제를 바라보는 새로운 시각을 얻을 수 있습니다.",
+        "자료 업로드",
+        "NotebookLM이나 ChatGPT 등에서 관련 자료를 업로드하고 지식 기반 대화를 시도해보세요.",
+        "결과 공유",
+        "실습 결과를 함께 공유하며 서로의 경험을 나누고 배워보세요.",
+        "\"AI와의 파트너십은 단순한 도구 사용을 넘어 새로운 사고 방식을 배우는 과정입니다.\""
+      ],
+      "notes": [
+        "120"
+      ],
+      "image_count": 5,
+      "images": [
+        {
+          "rid": "rId3",
+          "target": "../media/image65.png",
+          "part": "ppt/media/image65.png",
+          "width": 1440,
+          "height": 2160,
+          "format": "PNG"
+        },
+        {
+          "rid": "rId4",
+          "target": "../media/image66.png",
+          "part": "ppt/media/image66.png",
+          "width": 66,
+          "height": 84,
+          "format": "PNG"
+        },
+        {
+          "rid": "rId5",
+          "target": "../media/image67.png",
+          "part": "ppt/media/image67.png",
+          "width": 66,
+          "height": 84,
+          "format": "PNG"
+        },
+        {
+          "rid": "rId6",
+          "target": "../media/image68.png",
+          "part": "ppt/media/image68.png",
+          "width": 66,
+          "height": 84,
+          "format": "PNG"
+        },
+        {
+          "rid": "rId7",
+          "target": "../media/image69.png",
+          "part": "ppt/media/image69.png",
+          "width": 66,
+          "height": 66,
+          "format": "PNG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 25,
+      "shape_tags": {
+        "pic": 5,
+        "sp": 20
+      }
+    },
+    {
+      "slide": 121,
+      "part": "ppt/slides/slide121.xml",
+      "text_count": 6,
+      "texts": [
+        "설정 전 vs 설정 후: 놀라운 변화",
+        "동일한 질문: \"거래처 추석 선물 추천 이메일 써줘\"",
+        "설정 전",
+        "일반적인 답변",
+        "설정 후",
+        "개인화된 맞춤 답변"
+      ],
+      "notes": [
+        "121"
+      ],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 9,
+      "shape_tags": {
+        "sp": 9
+      }
+    },
+    {
+      "slide": 122,
+      "part": "ppt/slides/slide122.xml",
+      "text_count": 3,
+      "texts": [
+        "왜 우리는",
+        "‘프로젝트’를",
+        "만들어야 하는가"
+      ],
+      "notes": [],
+      "image_count": 1,
+      "images": [
+        {
+          "rid": "rId2",
+          "target": "../media/image70.jpeg",
+          "part": "ppt/media/image70.jpeg",
+          "width": 2744,
+          "height": 1832,
+          "format": "JPEG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 6,
+      "shape_tags": {
+        "grpSp": 2,
+        "sp": 4
+      }
+    },
+    {
+      "slide": 123,
+      "part": "ppt/slides/slide123.xml",
+      "text_count": 15,
+      "texts": [
+        "프로젝트의 구조",
+        "반복 감소",
+        "프로젝트는 성장을 지속시키는 기반을 마련한다.",
+        "맥락 축적",
+        "프로젝트는 팀의 지식을 체계적으로 저장한다.",
+        "지식 진화",
+        "AI는 지식의 체계화를 가속화하는 파트너다.",
+        "핵심 요점 정리",
+        "2",
+        "반복 감소",
+        "프로젝트는 성장을 지속시키는 기반을 마련한다.",
+        "맥락 축적",
+        "프로젝트는 팀의 지식을 체계적으로 저장한다.",
+        "지식 진화",
+        "AI는 지식의 체계화를 가속화하는 파트너다."
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 22,
+      "shape_tags": {
+        "grpSp": 6,
+        "sp": 16
+      }
+    },
+    {
+      "slide": 124,
+      "part": "ppt/slides/slide124.xml",
+      "text_count": 13,
+      "texts": [
+        "반복을 줄이기 위해",
+        "리셋",
+        "새롭게 시작할 때마다 성장이 리셋되며,",
+        "이는 업무 흐름을 방해하고 창의성을 제한합니다.",
+        "출발점",
+        "프로젝트는 지속 가능한 출발점을 제공하여 이전 경험을 활용하고 다음 단계로 나아가는 기반을 마련합니다.",
+        "추가 사항",
+        "3",
+        "리셋",
+        "새롭게 시작할 때마다 성장이 리셋되며,",
+        "이는 업무 흐름을 방해하고 창의성을 제한합니다.",
+        "출발점",
+        "프로젝트는 지속 가능한 출발점을 제공하여 이전 경험을 활용하고 다음 단계로 나아가는 기반을 마련합니다."
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 10,
+      "shape_tags": {
+        "grpSp": 2,
+        "sp": 8
+      }
+    },
+    {
+      "slide": 125,
+      "part": "ppt/slides/slide125.xml",
+      "text_count": 11,
+      "texts": [
+        "맥락을 쌓기 위해",
+        "기록",
+        "기록은 남지만 맥락이 사라지면 의미가 퇴색된다. 프로젝트는 결정의 배경과 이유를 명확히 하여 맥락을 보존한다.",
+        "판단의 이유",
+        "프로젝트는 팀의 판단 이유를 저장하여 지속적인 성장과 학습 자산으로 활용하며, 조직의 지식 기반을 강화한다.",
+        "요약 및 강조",
+        "4",
+        "기록",
+        "기록은 남지만 맥락이 사라지면 의미가 퇴색된다. 프로젝트는 결정의 배경과 이유를 명확히 하여 맥락을 보존한다.",
+        "판단의 이유",
+        "프로젝트는 팀의 판단 이유를 저장하여 지속적인 성장과 학습 자산으로 활용하며, 조직의 지식 기반을 강화한다."
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 10,
+      "shape_tags": {
+        "grpSp": 2,
+        "sp": 8
+      }
+    },
+    {
+      "slide": 126,
+      "part": "ppt/slides/slide126.xml",
+      "text_count": 11,
+      "texts": [
+        "지식을 진화시키기 위해",
+        "데이터 생성",
+        "반복을 통해 생성된 데이터는 실질적인 통찰로 발전하며, 데이터 분석은 프로젝트의 성공적인 방향을 제시하는 데 중요한 역할을 합니다.",
+        "시스템화",
+        "프로젝트는 통찰을 체계화하여 팀의 지식 자산으로 변환하고, 이는 지속 가능한 성장과 향후 프로젝트에 유용하게 활용됩니다.",
+        "요약과 메모",
+        "5",
+        "데이터 생성",
+        "반복을 통해 생성된 데이터는 실질적인 통찰로 발전하며, 데이터 분석은 프로젝트의 성공적인 방향을 제시하는 데 중요한 역할을 합니다.",
+        "시스템화",
+        "프로젝트는 통찰을 체계화하여 팀의 지식 자산으로 변환하고, 이는 지속 가능한 성장과 향후 프로젝트에 유용하게 활용됩니다."
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 10,
+      "shape_tags": {
+        "grpSp": 2,
+        "sp": 8
+      }
+    },
+    {
+      "slide": 127,
+      "part": "ppt/slides/slide127.xml",
+      "text_count": 1,
+      "texts": [
+        "프로젝트 지침? CRAFT-O로!"
+      ],
+      "notes": [],
+      "image_count": 0,
+      "images": [],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 1,
+      "shape_tags": {
+        "sp": 1
+      }
+    },
+    {
+      "slide": 128,
+      "part": "ppt/slides/slide128.xml",
+      "text_count": 5,
+      "texts": [
+        "AI와의 티키타카: 질문의 힘",
+        "학생: \"우리 팀은 '빨래집게'를 쓸 거야.\"",
+        "Who Hunter: \"집는 힘을 쓰려는 거군요? 그럼 차 안에서 물건이 흔들려 곤란한 사람은 누구일까요?\"",
+        "학생: \"고속버스 커튼이 자꾸 벌어져서 눈이 부시대.\"",
+        "Who Hunter: \"그 빛 때문에 가장 컴플레인을 받는 사람은 승객일까요, 기사님일까요?\""
+      ],
+      "notes": [],
+      "image_count": 4,
+      "images": [
+        {
+          "rid": "rId3",
+          "target": "../media/image71.png",
+          "part": "ppt/media/image71.png",
+          "width": 800,
+          "height": 436,
+          "format": "PNG"
+        },
+        {
+          "rid": "rId4",
+          "target": "../media/image72.png",
+          "part": "ppt/media/image72.png",
+          "width": 550,
+          "height": 234,
+          "format": "PNG"
+        },
+        {
+          "rid": "rId5",
+          "target": "../media/image73.png",
+          "part": "ppt/media/image73.png",
+          "width": 550,
+          "height": 98,
+          "format": "PNG"
+        },
+        {
+          "rid": "rId6",
+          "target": "../media/image74.png",
+          "part": "ppt/media/image74.png",
+          "width": 23,
+          "height": 24,
+          "format": "PNG"
+        }
+      ],
+      "chart_count": 0,
+      "charts": [],
+      "shape_count": 10,
+      "shape_tags": {
+        "pic": 4,
+        "sp": 6
+      }
+    }
+  ],
+  "media": [
+    {
+      "part": "ppt/media/image4.png",
+      "size": 3658,
+      "width": 130,
+      "height": 124,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image3.jpeg",
+      "size": 729969,
+      "width": 2837,
+      "height": 1826,
+      "format": "JPEG"
+    },
+    {
+      "part": "ppt/media/image2.png",
+      "size": 3843,
+      "width": 171,
+      "height": 83,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image1.png",
+      "size": 953,
+      "width": 110,
+      "height": 111,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image54.png",
+      "size": 5602791,
+      "width": 2489,
+      "height": 2477,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image9.png",
+      "size": 700812,
+      "width": 1200,
+      "height": 675,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image8.jpg",
+      "size": 31600,
+      "width": 720,
+      "height": 405,
+      "format": "JPEG"
+    },
+    {
+      "part": "ppt/media/image62.png",
+      "size": 585675,
+      "width": 3840,
+      "height": 454,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image63.png",
+      "size": 318435,
+      "width": 922,
+      "height": 922,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image64.png",
+      "size": 381,
+      "width": 46,
+      "height": 36,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image55.png",
+      "size": 5586869,
+      "width": 2485,
+      "height": 2473,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image65.png",
+      "size": 1369888,
+      "width": 1440,
+      "height": 2160,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image66.png",
+      "size": 1118,
+      "width": 66,
+      "height": 84,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image67.png",
+      "size": 815,
+      "width": 66,
+      "height": 84,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image68.png",
+      "size": 876,
+      "width": 66,
+      "height": 84,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image69.png",
+      "size": 856,
+      "width": 66,
+      "height": 66,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image56.png",
+      "size": 5590241,
+      "width": 2486,
+      "height": 2474,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image70.jpeg",
+      "size": 1180343,
+      "width": 2744,
+      "height": 1832,
+      "format": "JPEG"
+    },
+    {
+      "part": "ppt/media/image50.png",
+      "size": 478498,
+      "width": 1440,
+      "height": 2160,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image71.png",
+      "size": 435365,
+      "width": 800,
+      "height": 436,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image72.png",
+      "size": 2141,
+      "width": 550,
+      "height": 234,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image73.png",
+      "size": 11652,
+      "width": 550,
+      "height": 98,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image74.png",
+      "size": 518,
+      "width": 23,
+      "height": 24,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image7.jpg",
+      "size": 71203,
+      "width": 576,
+      "height": 1024,
+      "format": "JPEG"
+    },
+    {
+      "part": "ppt/media/image6.jpg",
+      "size": 28815,
+      "width": 357,
+      "height": 357,
+      "format": "JPEG"
+    },
+    {
+      "part": "ppt/media/image5.png",
+      "size": 19037,
+      "width": 317,
+      "height": 239,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image49.svg",
+      "size": 34617
+    },
+    {
+      "part": "ppt/media/image48.svg",
+      "size": 40743
+    },
+    {
+      "part": "ppt/media/image57.png",
+      "size": 1458012,
+      "width": 1440,
+      "height": 2160,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image52.png",
+      "size": 328879,
+      "width": 1440,
+      "height": 2160,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image58.png",
+      "size": 676854,
+      "width": 1440,
+      "height": 2160,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image51.png",
+      "size": 806675,
+      "width": 2400,
+      "height": 1936,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image59.png",
+      "size": 225,
+      "width": 1106,
+      "height": 6,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image60.png",
+      "size": 286,
+      "width": 1686,
+      "height": 6,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image53.png",
+      "size": 1761690,
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image61.png",
+      "size": 856830,
+      "width": 1440,
+      "height": 2160,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image47.svg",
+      "size": 29848
+    },
+    {
+      "part": "ppt/media/image46.svg",
+      "size": 32427
+    },
+    {
+      "part": "ppt/media/image45.png",
+      "size": 70105,
+      "width": 1984,
+      "height": 916,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image44.png",
+      "size": 2727021,
+      "width": 1440,
+      "height": 2160,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image43.png",
+      "size": 2820422,
+      "width": 1440,
+      "height": 2160,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image42.png",
+      "size": 2910860,
+      "width": 1440,
+      "height": 2160,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image41.png",
+      "size": 4529,
+      "width": 260,
+      "height": 312,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image40.png",
+      "size": 4518,
+      "width": 260,
+      "height": 312,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image39.png",
+      "size": 4438,
+      "width": 260,
+      "height": 312,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image38.png",
+      "size": 2670679,
+      "width": 1440,
+      "height": 2160,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image37.png",
+      "size": 897322,
+      "width": 3840,
+      "height": 652,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image36.png",
+      "size": 745,
+      "width": 52,
+      "height": 66,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image35.png",
+      "size": 661,
+      "width": 52,
+      "height": 66,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image34.png",
+      "size": 1068,
+      "width": 52,
+      "height": 66,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image33.png",
+      "size": 1737048,
+      "width": 1440,
+      "height": 2160,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image32.png",
+      "size": 2331,
+      "width": 130,
+      "height": 130,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image31.png",
+      "size": 1381,
+      "width": 130,
+      "height": 130,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image30.png",
+      "size": 1342,
+      "width": 130,
+      "height": 130,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image29.png",
+      "size": 1293271,
+      "width": 1440,
+      "height": 2160,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image28.png",
+      "size": 3323767,
+      "width": 1440,
+      "height": 2160,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image27.png",
+      "size": 1443389,
+      "width": 1694,
+      "height": 1694,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image26.png",
+      "size": 2017134,
+      "width": 1440,
+      "height": 2160,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image25.png",
+      "size": 1953392,
+      "width": 1440,
+      "height": 2160,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image24.png",
+      "size": 1211655,
+      "width": 1440,
+      "height": 2160,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image23.png",
+      "size": 1934975,
+      "width": 1440,
+      "height": 2162,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image22.png",
+      "size": 1562740,
+      "width": 1300,
+      "height": 1300,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image21.png",
+      "size": 1428087,
+      "width": 2686,
+      "height": 1346,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image20.png",
+      "size": 1555473,
+      "width": 1440,
+      "height": 2160,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image19.png",
+      "size": 5909,
+      "width": 224,
+      "height": 224,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image18.jpg",
+      "size": 1932733,
+      "width": 2700,
+      "height": 3339,
+      "format": "JPEG"
+    },
+    {
+      "part": "ppt/media/image17.jpeg",
+      "size": 611027,
+      "width": 1333,
+      "height": 800,
+      "format": "JPEG"
+    },
+    {
+      "part": "ppt/media/image16.jpeg",
+      "size": 36448,
+      "width": 1280,
+      "height": 720,
+      "format": "JPEG"
+    },
+    {
+      "part": "ppt/media/image15.jpeg",
+      "size": 52498,
+      "width": 1200,
+      "height": 675,
+      "format": "JPEG"
+    },
+    {
+      "part": "ppt/media/image14.jpeg",
+      "size": 56554,
+      "width": 1200,
+      "height": 800,
+      "format": "JPEG"
+    },
+    {
+      "part": "ppt/media/image13.png",
+      "size": 384908,
+      "width": 800,
+      "height": 341,
+      "format": "PNG"
+    },
+    {
+      "part": "ppt/media/image12.jpg",
+      "size": 328759,
+      "width": 710,
+      "height": 474,
+      "format": "JPEG"
+    },
+    {
+      "part": "ppt/media/image11.jpg",
+      "size": 59645,
+      "width": 1116,
+      "height": 623,
+      "format": "JPEG"
+    },
+    {
+      "part": "ppt/media/image10.jpeg",
+      "size": 85369,
+      "width": 1200,
+      "height": 900,
+      "format": "JPEG"
+    }
+  ]
+}

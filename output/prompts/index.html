@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1e3b52" />
+  <title>월드휴먼브리지 AI 실무 자료 모음</title>
+  <style>
+    @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
+
+    :root {
+      --bg: #f7f5f0;
+      --surface: #ffffff;
+      --ink: #1f2b37;
+      --ink-soft: #637181;
+      --line: #d7d2c8;
+      --navy: #1e3b52;
+      --blue: #4472c4;
+      --green-soft: #eef6ea;
+      --blue-soft: #eef4fe;
+      --shadow: 0 10px 30px rgba(31, 43, 55, 0.06);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Pretendard', sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+    }
+
+    .topbar { height: 6px; background: var(--navy); }
+    .wrap {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 32px 20px 48px;
+    }
+    .eyebrow {
+      color: var(--blue);
+      font-size: 14px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 42px;
+      line-height: 1.1;
+      letter-spacing: -0.04em;
+    }
+    .sub {
+      margin-top: 16px;
+      color: var(--ink-soft);
+      font-size: 19px;
+      line-height: 1.5;
+      max-width: 660px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 28px;
+    }
+    .card {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      padding: 22px;
+      position: relative;
+      overflow: hidden;
+      min-height: 220px;
+    }
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 8px;
+      background: var(--navy);
+    }
+    .card.blue { background: var(--blue-soft); }
+    .card.green { background: var(--green-soft); }
+    .kicker {
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--blue);
+      margin-bottom: 12px;
+    }
+    .title {
+      font-size: 28px;
+      font-weight: 800;
+      line-height: 1.14;
+      letter-spacing: -0.03em;
+      margin-bottom: 12px;
+    }
+    .body {
+      font-size: 15px;
+      line-height: 1.55;
+      color: var(--ink-soft);
+    }
+    .footer-note {
+      margin-top: 24px;
+      font-size: 14px;
+      color: var(--ink-soft);
+    }
+    @media (max-width: 720px) {
+      .wrap {
+        padding: 24px 14px 36px;
+      }
+      h1 { font-size: 34px; }
+      .sub { font-size: 17px; }
+      .grid { grid-template-columns: 1fr; }
+      .card { min-height: auto; padding: 18px; }
+      .title { font-size: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar"></div>
+  <div class="wrap">
+    <div class="eyebrow">월드휴먼브리지 AI 활용 워크숍</div>
+    <h1>AI 실무 자료 모음</h1>
+    <div class="sub">
+      월드휴먼브리지 실무자가 바로 열고, 복사하고, 자기 업무에 맞게 바꿔 쓸 수 있도록 정리한 실전 자료입니다.
+    </div>
+
+    <div class="grid">
+      <a class="card" href="./practice-first/index.html">
+        <div class="kicker">먼저 해보기</div>
+        <div class="title">먼저 해보는 실습</div>
+        <div class="body">
+          기획, 홍보, 사업운영, 후원·캠페인 중 내 장면 하나를 고르고 내 말로 먼저 요청해보는 페이지입니다. 어디서 막히는지 스스로 느껴보는 단계입니다.
+        </div>
+      </a>
+
+      <a class="card blue" href="./cheatsheet/index.html">
+        <div class="kicker">추천</div>
+        <div class="title">월드휴먼브리지형 치트시트</div>
+        <div class="body">
+          인터뷰형 시작, 목적 찾기, CRAFTO 점검, 1-3-1, 피드백 루프를 월드휴먼브리지 업무 장면에 맞춰 바로 복사해 쓸 수 있는 웹 버전입니다.
+        </div>
+      </a>
+
+      <a class="card green" href="../slides/생성형AI_기초활용역량_프롬프트_치트시트_1장.pdf">
+        <div class="kicker">배포본</div>
+        <div class="title">1장 기본 PDF 치트시트</div>
+        <div class="body">
+          웹 버전보다 압축된 한 장짜리 기본본입니다. 강의 중 바로 보여주거나 인쇄용으로 함께 활용하기 좋습니다.
+        </div>
+      </a>
+    </div>
+
+    <div class="footer-note">
+      먼저 웹 버전으로 복사해 쓰고, 필요하면 PDF 압축본을 함께 배포하는 흐름을 권장합니다.
+    </div>
+  </div>
+</body>
+</html>

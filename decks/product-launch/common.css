@@ -1,0 +1,356 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
+
+:root {
+  --bg: #f7f5f0;
+  --surface: #ffffff;
+  --ink: #1f2b37;
+  --ink-soft: #637181;
+  --line: #d7d2c8;
+  --navy: #1e3b52;
+  --blue: #4472c4;
+  --gold: #b88a3a;
+  --green: #70ad47;
+  --orange: #ed7d31;
+  --blue-soft: #eef4fe;
+  --green-soft: #eef6ea;
+  --warm-soft: #f9efe5;
+  --coral-soft: #f8ebe6;
+  --shadow: 0 1pt 3pt rgba(31, 43, 55, 0.06);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 720pt;
+  height: 405pt;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Pretendard', sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  position: relative;
+  padding: 20pt 28pt 20pt;
+}
+
+.topbar {
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 5pt;
+  background: var(--navy);
+}
+
+.footer-line {
+  position: absolute;
+  left: 28pt;
+  right: 28pt;
+  bottom: 14pt;
+  border-top: 1pt solid var(--line);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 4pt;
+}
+
+.section {
+  font-size: 10pt;
+  font-weight: 700;
+  color: var(--blue);
+}
+
+.slide-no {
+  font-size: 10pt;
+  font-weight: 700;
+  color: var(--ink-soft);
+}
+
+.tiny-rule {
+  width: 34pt;
+  height: 1.5pt;
+  background: var(--navy);
+  margin: 22pt 0 18pt;
+}
+
+.title {
+  font-size: 31pt;
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.title.center {
+  text-align: center;
+}
+
+.subtitle {
+  margin-top: 14pt;
+  font-size: 14pt;
+  line-height: 1.55;
+  color: var(--ink-soft);
+}
+
+.subtitle.italic {
+  font-style: italic;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 110pt;
+  height: 25pt;
+  padding: 0 14pt;
+  border-radius: 13pt;
+  background: var(--gold);
+  color: var(--ink);
+  font-size: 9pt;
+  font-weight: 800;
+}
+
+.grid-2, .grid-3, .grid-4, .grid-5 {
+  display: grid;
+  gap: 14pt;
+}
+
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-4 { grid-template-columns: repeat(4, 1fr); }
+.grid-5 { grid-template-columns: repeat(5, 1fr); }
+
+.card {
+  background: var(--surface);
+  border: 1pt solid var(--line);
+  border-radius: 10pt;
+  box-shadow: var(--shadow);
+  padding: 14pt 15pt 13pt;
+  position: relative;
+}
+
+.card.no-shadow { box-shadow: none; }
+
+.card::before {
+  content: '';
+  position: absolute;
+  left: -1pt;
+  right: -1pt;
+  top: -1pt;
+  height: 7pt;
+  border-radius: 10pt 10pt 0 0;
+  background: var(--navy);
+}
+
+.card.blue::before { background: var(--blue); }
+.card.gold::before { background: var(--gold); }
+.card.green::before { background: var(--green); }
+.card.orange::before { background: var(--orange); }
+.card.navy::before { background: var(--navy); }
+.card.soft-blue { background: var(--blue-soft); }
+.card.soft-green { background: var(--green-soft); }
+.card.soft-warm { background: var(--warm-soft); }
+.card.soft-coral { background: var(--coral-soft); }
+.card.dark {
+  background: #24303d;
+  border-color: #24303d;
+  color: #f4f7fa;
+}
+.card.dark::before { background: #24303d; }
+
+.kicker {
+  font-size: 8.6pt;
+  font-weight: 800;
+  color: var(--blue);
+  margin-bottom: 10pt;
+}
+
+.dark .kicker { color: #dbe6ef; }
+
+.card-title {
+  font-size: 18pt;
+  font-weight: 800;
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.card-title.sm { font-size: 15pt; }
+.card-title.lg { font-size: 21pt; }
+
+.dark .card-title { color: #ffffff; }
+
+.card-body {
+  margin-top: 12pt;
+  font-size: 12.4pt;
+  line-height: 1.45;
+  color: var(--ink);
+}
+
+.card-body.sm { font-size: 11pt; }
+.card-body.xs { font-size: 10pt; }
+
+.dark .card-body { color: #e6eef5; }
+
+.muted {
+  color: var(--ink-soft);
+}
+
+.quote {
+  font-size: 28pt;
+  line-height: 1.28;
+  letter-spacing: -0.03em;
+  font-weight: 800;
+  text-align: center;
+  color: var(--ink);
+}
+
+.quote-meta {
+  margin-top: 24pt;
+  font-size: 13pt;
+  font-style: italic;
+  color: var(--ink-soft);
+  text-align: center;
+}
+
+.bullets {
+  margin-top: 6pt;
+  padding-left: 18pt;
+}
+
+.bullets li {
+  font-size: 13.4pt;
+  line-height: 1.45;
+  margin-bottom: 8pt;
+  color: var(--ink);
+}
+
+.caption {
+  font-size: 11pt;
+  line-height: 1.45;
+  color: var(--ink-soft);
+}
+
+.mini {
+  font-size: 10.5pt;
+  color: var(--ink-soft);
+}
+
+.timeline {
+  margin-top: 34pt;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14pt;
+}
+
+.timeline .item {
+  position: relative;
+}
+
+.timeline .dot {
+  width: 22pt;
+  height: 22pt;
+  border-radius: 50%;
+  background: var(--navy);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9pt;
+  font-weight: 800;
+  margin-bottom: 12pt;
+}
+
+.timeline .item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 10pt;
+  left: 28pt;
+  width: calc(100% - 8pt);
+  border-top: 1pt solid #cfd6df;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22pt;
+}
+
+.bar-1080 {
+  margin-top: 32pt;
+  display: grid;
+  grid-template-columns: 2fr 7fr 2fr;
+  gap: 8pt;
+  align-items: stretch;
+}
+
+.bar-seg {
+  border-radius: 10pt;
+  min-height: 64pt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18pt;
+  font-weight: 800;
+}
+
+.bar-seg.navy { background: var(--navy); color: #fff; }
+.bar-seg.blue { background: var(--blue-soft); color: var(--ink); }
+
+.funnel {
+  margin-top: 28pt;
+  display: grid;
+  grid-template-columns: 2fr auto 5fr auto 2fr;
+  gap: 10pt;
+  align-items: center;
+}
+
+.arrow {
+  font-size: 26pt;
+  color: var(--gold);
+  text-align: center;
+}
+
+.quad {
+  margin-top: 26pt;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14pt;
+}
+
+.roadmap {
+  margin-top: 30pt;
+  display: grid;
+  grid-template-columns: 2.5fr auto 3.2fr auto 2.5fr;
+  gap: 12pt;
+  align-items: center;
+}
+
+.road-arrow {
+  font-size: 32pt;
+  color: var(--gold);
+  text-align: center;
+}
+
+.cover-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 26pt;
+  margin-top: 8pt;
+}
+
+.stack {
+  display: grid;
+  gap: 16pt;
+}
+
+.action-box {
+  margin: 26pt auto 0;
+  width: 520pt;
+}

@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1e3b52" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231e3b52'/%3E%3Cpath d='M8 21h16M10 17c2-4 4-6 6-6s4 2 6 6' stroke='white' stroke-width='2.1' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='16' cy='10' r='2.3' fill='%23f7f5f0'/%3E%3C/svg%3E" />
+  <title>충주문화재단 AI 프롬프트 항목</title>
+  <style>
+    @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
+
+    :root {
+      --bg: #f7f5f0;
+      --surface: #ffffff;
+      --ink: #1f2b37;
+      --ink-soft: #637181;
+      --line: #d7d2c8;
+      --navy: #1e3b52;
+      --blue: #4472c4;
+      --green: #6d9349;
+      --gold: #b88a3a;
+      --orange: #c96b43;
+      --blue-soft: #eef4fe;
+      --green-soft: #eef6ea;
+      --warm-soft: #f9efe5;
+      --coral-soft: #f8ebe6;
+      --shadow: 0 8px 24px rgba(31, 43, 55, 0.06);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.55;
+    }
+
+    .topbar { height: 6px; background: var(--navy); }
+
+    .wrap {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 28px 22px 60px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      gap: 22px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+    }
+
+    .header-main { max-width: 680px; }
+
+    .eyebrow {
+      color: var(--blue);
+      font-size: 14px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 44px;
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+
+    .sub {
+      margin-top: 17px;
+      color: var(--ink-soft);
+      font-size: 19px;
+      max-width: 650px;
+    }
+
+    .note {
+      position: relative;
+      overflow: hidden;
+      flex: 0 0 330px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      padding: 18px;
+    }
+
+    .note::before,
+    .card::before,
+    .mini::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background: var(--navy);
+    }
+
+    .note-title {
+      font-size: 22px;
+      font-weight: 800;
+      line-height: 1.25;
+      margin: 4px 0 10px;
+    }
+
+    .note p {
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: 15px;
+    }
+
+    .toolbar {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 22px;
+    }
+
+    button,
+    .link-btn {
+      appearance: none;
+      border: 0;
+      border-radius: 999px;
+      min-height: 42px;
+      padding: 10px 16px;
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 800;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.15s ease;
+    }
+
+    button:hover,
+    .link-btn:hover { transform: translateY(-1px); }
+
+    .primary { background: var(--navy); color: #fff; }
+    .secondary { background: #e9eef3; color: var(--ink); border: 1px solid var(--line); }
+
+    .status {
+      min-height: 22px;
+      margin-top: 10px;
+      color: var(--ink-soft);
+      font-size: 14px;
+    }
+
+    .section { margin-top: 28px; }
+
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      align-items: end;
+      margin-bottom: 14px;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 28px;
+      line-height: 1.18;
+      letter-spacing: 0;
+    }
+
+    .section-note {
+      color: var(--ink-soft);
+      font-size: 15px;
+      max-width: 540px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .point-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .example-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .card,
+    .mini {
+      position: relative;
+      overflow: hidden;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      min-height: 360px;
+      padding: 16px;
+    }
+
+    .mini {
+      min-height: 170px;
+      padding: 16px;
+    }
+
+    .card.blue,
+    .mini.blue { background: var(--blue-soft); }
+    .card.green,
+    .mini.green { background: var(--green-soft); }
+    .card.gold,
+    .mini.gold { background: var(--warm-soft); }
+    .card.orange,
+    .mini.orange { background: var(--coral-soft); }
+
+    .card.blue::before,
+    .mini.blue::before { background: var(--blue); }
+    .card.green::before,
+    .mini.green::before { background: var(--green); }
+    .card.gold::before,
+    .mini.gold::before { background: var(--gold); }
+    .card.orange::before,
+    .mini.orange::before { background: var(--orange); }
+
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: flex-start;
+      margin: 6px 0 10px;
+    }
+
+    .kicker {
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 800;
+      margin-bottom: 4px;
+    }
+
+    h3,
+    h4 {
+      margin: 0;
+      line-height: 1.24;
+      letter-spacing: 0;
+    }
+
+    h3 { font-size: 20px; }
+    h4 { font-size: 18px; }
+
+    .desc {
+      margin: 10px 0;
+      color: var(--ink-soft);
+      font-size: 14px;
+    }
+
+    .copy-small {
+      min-height: 32px;
+      padding: 7px 11px;
+      font-size: 12px;
+      background: var(--navy);
+      color: #fff;
+      flex: 0 0 auto;
+    }
+
+    pre {
+      white-space: pre-wrap;
+      word-break: keep-all;
+      overflow-wrap: anywhere;
+      margin: auto 0 0;
+      background: rgba(255, 255, 255, 0.76);
+      border: 1px solid rgba(30, 59, 82, 0.15);
+      border-radius: 8px;
+      padding: 12px;
+      color: #233241;
+      font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 13px;
+      line-height: 1.52;
+    }
+
+    .mini p {
+      margin: 10px 0 0;
+      color: var(--ink-soft);
+      font-size: 14px;
+    }
+
+    .footer {
+      margin-top: 30px;
+      border-top: 1px solid var(--line);
+      padding-top: 18px;
+      color: var(--ink-soft);
+      font-size: 14px;
+    }
+
+    @media (max-width: 1100px) {
+      .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .point-grid,
+      .example-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .note { flex: 1 1 100%; }
+    }
+
+    @media (max-width: 720px) {
+      .wrap { padding: 24px 14px 42px; }
+      h1 { font-size: 34px; }
+      .sub { font-size: 17px; }
+      .section-head { display: block; }
+      .section-note { margin-top: 8px; }
+      .grid,
+      .point-grid,
+      .example-grid { grid-template-columns: 1fr; }
+      .card,
+      .mini { min-height: auto; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar"></div>
+  <main class="wrap">
+    <header class="header">
+      <div class="header-main">
+        <div class="eyebrow">충주문화재단 AI 활용 과정</div>
+        <h1>생성형 AI 프롬프트 치트시트</h1>
+        <div class="sub">
+          기본 치트시트는 그대로 두고, 충주문화재단 업무 주제에
+          어떤 프롬프트를 적용할지 연습할 수 있게 구성했습니다.
+        </div>
+        <div class="toolbar">
+          <button class="primary" id="copyAllBtn">전체 프롬프트 복사</button>
+          <a class="link-btn secondary" href="../index.html">자료 모음으로 돌아가기</a>
+        </div>
+        <div class="status" id="status" aria-live="polite"></div>
+      </div>
+      <aside class="note">
+        <div class="note-title">기본 치트시트는 그대로</div>
+        <p>
+          이 페이지의 중심은 문화기획 전문 교재가 아니라 AI 활용 기본기입니다.
+          주제는 연습 과제이며, 답안 문장은 참가자가 직접 AI와 작성합니다.
+        </p>
+      </aside>
+    </header>
+
+    <section class="section" aria-labelledby="core-title">
+      <div class="section-head">
+        <h2 id="core-title">핵심 프롬프트 5개</h2>
+        <div class="section-note">
+          강의의 기본 흐름입니다. 먼저 질문하게 하고, 목적을 찾고, 맥락을 구조화한 뒤,
+          선택과 점검은 사람이 끝냅니다.
+        </div>
+      </div>
+
+      <div class="grid">
+        <article class="card blue">
+          <div class="card-top">
+            <div><div class="kicker">TOP 1</div><h3>인터뷰형 시작</h3></div>
+            <button class="copy-small" data-copy-target="prompt-1">복사</button>
+          </div>
+          <p class="desc">AI에게 바로 답을 요구하지 않고, 먼저 질문하게 한다.</p>
+          <pre id="prompt-1">지금 바로 답하지 말고, 내가 진짜 무엇을 하려는지 더 정확히 파악할 수 있도록 먼저 5개의 질문을 해줘.
+
+특히 목적, 청자, 제약조건, 절대 놓치면 안 되는 기준을 확인해줘.</pre>
+        </article>
+
+        <article class="card green">
+          <div class="card-top">
+            <div><div class="kicker">TOP 2</div><h3>목적 발견</h3></div>
+            <button class="copy-small" data-copy-target="prompt-2">복사</button>
+          </div>
+          <p class="desc">결과물보다 필요한 결과를 확인한다.</p>
+          <pre id="prompt-2">내가 지금 하려는 일을 더 정확히 정의하고 싶다.
+바로 해결책을 주지 말고, 아래 순서로 질문해줘.
+
+1. 지금 조금 더 수월해졌으면 하는 장면은 무엇인가
+2. 그 장면이 왜 번거로운가
+3. 그 일이 잘 되면 무엇이 달라지는가
+4. 그게 왜 중요한가
+5. 나에게 이 일의 성과란 무엇인가
+6. 누가 무엇을 인정해주면 잘 된 것인가
+7. 결국 내가 진짜 원하는 결과는 무엇인가
+
+마지막에는 내 답을 한 문장으로 정리해줘.</pre>
+        </article>
+
+        <article class="card gold">
+          <div class="card-top">
+            <div><div class="kicker">TOP 3</div><h3>CRAFTO 점검</h3></div>
+            <button class="copy-small" data-copy-target="prompt-3">복사</button>
+          </div>
+          <p class="desc">요청의 맥락과 기준을 정리한다.</p>
+          <pre id="prompt-3">내 질문을 CRAFTO 기준으로 점검해줘.
+빠진 맥락, 모호한 부분, 판단 기준이 부족한 부분이 있으면 먼저 질문해줘.
+
+- Context: 지금 어떤 상황인가
+- Role: AI는 어떤 역할을 해야 하는가
+- Audience: 누가 이 결과를 보는가
+- Format: 어떤 형태가 필요한가
+- Tone: 어느 수준과 말투가 필요한가
+- Option: 제약, 금지선, 선택 기준은 무엇인가</pre>
+        </article>
+
+        <article class="card orange">
+          <div class="card-top">
+            <div><div class="kicker">TOP 4</div><h3>1-3-1 선택</h3></div>
+            <button class="copy-small" data-copy-target="prompt-4">복사</button>
+          </div>
+          <p class="desc">대안을 비교하고 선택 기준을 확인한다.</p>
+          <pre id="prompt-4">이 문제를 1-3-1 구조로 정리해줘.
+
+1. 문제를 한 문장으로 정의해줘
+2. 실행 가능한 대안 3개를 제시해줘
+3. 각 대안의 장단점을 간단히 비교해줘
+4. 그중 권고안 1개를 제안해줘
+5. 다만 마지막 선택은 내가 할 수 있게, 권고안의 위험도 함께 말해줘</pre>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <div><div class="kicker">TOP 5</div><h3>피드백 루프</h3></div>
+            <button class="copy-small" data-copy-target="prompt-5">복사</button>
+          </div>
+          <p class="desc">초안 작성 후 점검 기준으로 검토한다.</p>
+          <pre id="prompt-5">이 결과물을 바로 고치지 말고, 먼저 네 가지 관점에서 점검해줘.
+
+1. 메타인지: 본질과 목적에 맞는가
+2. 레드팀: 치명적 리스크는 무엇인가
+3. 심사위원: 논리 비약은 없는가
+4. 전문가: 더 나은 대안은 없는가
+
+각 관점마다 한 줄씩만 말해줘.
+그다음 마지막에는 "내가 직접 다시 판단해야 할 쟁점"을 한 줄로 정리해줘.</pre>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="topic-title">
+      <div class="section-head">
+        <h2 id="topic-title">주제 선택</h2>
+        <div class="section-note">
+          주제 하나를 선택한 뒤, 카드에 표시된 프롬프트를 적용합니다. 정답 예문은 제공하지 않습니다.
+        </div>
+      </div>
+
+      <div class="example-grid">
+        <article class="mini blue">
+          <div class="kicker">주제 1</div>
+          <h4>시민 참여 프로그램 기획</h4>
+          <p>조건: 대상 시민 미정, 예산 제한, 운영 공간 필요. 적용할 프롬프트: 인터뷰형 시작, 목적 발견.</p>
+        </article>
+        <article class="mini green">
+          <div class="kicker">주제 2</div>
+          <h4>공연 홍보 문안 작성</h4>
+          <p>조건: 공연 정보 있음, 신청 방법 포함 필요, 과장 표현 제외. 적용할 프롬프트: CRAFTO 점검.</p>
+        </article>
+        <article class="mini gold">
+          <div class="kicker">주제 3</div>
+          <h4>행사 현장 운영 점검</h4>
+          <p>조건: 접수, 동선, 안전, 민원 대응 필요. 적용할 프롬프트: 피드백 루프.</p>
+        </article>
+        <article class="mini orange">
+          <div class="kicker">주제 4</div>
+          <h4>결과보고서 구조 작성</h4>
+          <p>조건: 참여 데이터, 만족도 의견, 운영 이슈 있음. 적용할 프롬프트: 1-3-1 선택, 피드백 루프.</p>
+        </article>
+        <article class="mini">
+          <div class="kicker">주제 5</div>
+          <h4>협력기관 제안 준비</h4>
+          <p>조건: 협력 대상 있음, 상대 기관 부담 확인 필요. 적용할 프롬프트: 인터뷰형 시작, CRAFTO 점검.</p>
+        </article>
+        <article class="mini green">
+          <div class="kicker">주제 6</div>
+          <h4>설문 응답 정리</h4>
+          <p>조건: 긍정 의견, 불편 의견, 개선 요구 혼재. 적용할 프롬프트: 1-3-1 선택, 피드백 루프.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="activity-title">
+      <div class="section-head">
+        <h2 id="activity-title">활동 방식</h2>
+        <div class="section-note">
+          주제와 프롬프트를 연결하는 절차입니다. 같은 주제라도 다른 프롬프트를 적용하면 결과가 달라집니다.
+        </div>
+      </div>
+
+      <div class="point-grid">
+        <article class="mini blue">
+          <div class="kicker">1단계</div>
+          <h4>주제 선택</h4>
+          <p>위 주제 중 하나를 선택한다.</p>
+        </article>
+        <article class="mini green">
+          <div class="kicker">2단계</div>
+          <h4>프롬프트 선택</h4>
+          <p>핵심 프롬프트 5개 중 하나를 선택한다.</p>
+        </article>
+        <article class="mini gold">
+          <div class="kicker">3단계</div>
+          <h4>입력 항목 작성</h4>
+          <p>업무 상황, 대상, 결과물, 자료, 제약, 판단 기준을 작성한다.</p>
+        </article>
+        <article class="mini orange">
+          <div class="kicker">4단계</div>
+          <h4>결과 검토</h4>
+          <p>AI 답변에서 사람이 다시 판단해야 할 내용을 표시한다.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="example-title">
+      <div class="section-head">
+        <h2 id="example-title">입력 항목 템플릿</h2>
+        <div class="section-note">
+          아래 항목을 채운 뒤 핵심 프롬프트 5개 중 필요한 것과 함께 사용합니다.
+        </div>
+      </div>
+
+      <div class="example-grid">
+        <article class="card blue">
+          <div class="card-top">
+            <div><div class="kicker">항목 1</div><h3>업무 상황</h3></div>
+            <button class="copy-small" data-copy-target="item-1">복사</button>
+          </div>
+          <p class="desc">현재 처리하려는 업무를 한 문장으로 적는다.</p>
+          <pre id="item-1">업무 상황:
+[프로그램 기획, 홍보문 작성, 운영 체크, 보고서 구조, 협력 요청]</pre>
+        </article>
+
+        <article class="card green">
+          <div class="card-top">
+            <div><div class="kicker">항목 2</div><h3>대상 / 청자</h3></div>
+            <button class="copy-small" data-copy-target="item-2">복사</button>
+          </div>
+          <p class="desc">결과물을 볼 사람이나 영향을 받는 사람을 적는다.</p>
+          <pre id="item-2">대상 / 청자:
+[시민, 참가자, 예술인, 협력기관, 내부 결재자, 언론, 학교, 단체]</pre>
+        </article>
+
+        <article class="card gold">
+          <div class="card-top">
+            <div><div class="kicker">항목 3</div><h3>필요한 결과물</h3></div>
+            <button class="copy-small" data-copy-target="item-3">복사</button>
+          </div>
+          <p class="desc">AI에게 받을 산출물 형식을 정한다.</p>
+          <pre id="item-3">필요한 결과물:
+[질문 목록, 초안, 요약, 체크리스트, 비교표, FAQ, 보고서 구조, 수정 의견]</pre>
+        </article>
+
+        <article class="card orange">
+          <div class="card-top">
+            <div><div class="kicker">항목 4</div><h3>자료 / 맥락</h3></div>
+            <button class="copy-small" data-copy-target="item-4">복사</button>
+          </div>
+          <p class="desc">AI가 참고해야 할 정보를 구분해서 적는다.</p>
+          <pre id="item-4">자료 / 맥락:
+[사업 배경, 기존 안내문, 일정, 장소, 참여 인원, 설문 응답, 예산 범위, 관련 기관]</pre>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <div><div class="kicker">항목 5</div><h3>제약 조건</h3></div>
+            <button class="copy-small" data-copy-target="item-5">복사</button>
+          </div>
+          <p class="desc">반드시 지켜야 할 조건과 제외할 내용을 적는다.</p>
+          <pre id="item-5">제약 조건:
+[예산, 인력, 일정, 공간, 안전 기준, 개인정보, 공공기관 표현, 확정되지 않은 정보 제외]</pre>
+        </article>
+
+        <article class="card green">
+          <div class="card-top">
+            <div><div class="kicker">항목 6</div><h3>판단 기준</h3></div>
+            <button class="copy-small" data-copy-target="item-6">복사</button>
+          </div>
+          <p class="desc">좋은 결과인지 판단할 기준을 적는다.</p>
+          <pre id="item-6">판단 기준:
+[이해하기 쉬운가, 실행 가능한가, 대상에 맞는가, 빠진 위험은 없는가, 다음 행동이 분명한가]</pre>
+        </article>
+      </div>
+    </section>
+
+    <div class="footer">
+      실제 회사 자료, 개인정보, 계정키, 미공개 예산 정보는 AI 도구에 넣지 않는 것을 기본 원칙으로 둡니다.
+    </div>
+  </main>
+
+  <script>
+    const statusEl = document.querySelector("#status");
+
+    function getPromptText(id) {
+      const target = document.getElementById(id);
+      return target ? target.innerText.trim() : "";
+    }
+
+    function setStatus(message) {
+      statusEl.textContent = message;
+      window.clearTimeout(setStatus.timer);
+      setStatus.timer = window.setTimeout(() => {
+        statusEl.textContent = "";
+      }, 2200);
+    }
+
+    async function copyText(text, label) {
+      try {
+        await navigator.clipboard.writeText(text);
+        setStatus(label + " 복사했습니다.");
+      } catch (error) {
+        setStatus("복사가 막혔습니다. 문장을 직접 선택해서 복사해 주세요.");
+      }
+    }
+
+    document.querySelectorAll("[data-copy-target]").forEach((button) => {
+      button.addEventListener("click", () => {
+        copyText(getPromptText(button.getAttribute("data-copy-target")), "프롬프트를");
+      });
+    });
+
+    document.querySelector("#copyAllBtn").addEventListener("click", () => {
+      const prompts = Array.from(document.querySelectorAll("pre"))
+        .map((pre, index) => `# ${index + 1}\n${pre.innerText.trim()}`)
+        .join("\n\n---\n\n");
+      copyText(prompts, "전체 프롬프트를");
+    });
+  </script>
+</body>
+</html>

@@ -94,7 +94,7 @@ def wrap_long_word(draw, text, max_width, fnt):
     return lines
 
 
-def wrap_text(draw, text, max_width, fnt):
+def auto_wrap_text(draw, text, max_width, fnt):
     words = text.split(" ")
     if len(words) <= 1:
         return wrap_long_word(draw, text, max_width, fnt)
@@ -115,6 +115,16 @@ def wrap_text(draw, text, max_width, fnt):
     if line:
         lines.append(line)
     return lines
+
+
+def wrap_text(draw, text, max_width, fnt):
+    all_lines = []
+    for part in str(text).splitlines() or [""]:
+        if part.strip():
+            all_lines.extend(auto_wrap_text(draw, part.strip(), max_width, fnt))
+        else:
+            all_lines.append("")
+    return all_lines
 
 
 def fit_multiline(draw, text, max_width, max_height, start_size, min_size):

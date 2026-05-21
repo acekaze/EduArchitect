@@ -2,7 +2,7 @@ import csv
 import math
 from pathlib import Path
 
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, JpegImagePlugin  # noqa: F401
 
 
 BASE = Path(__file__).resolve().parent

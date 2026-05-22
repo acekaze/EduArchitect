@@ -1,0 +1,7 @@
+card_id,card_name,score,quantity,meaning,short_copy,main_color,sub_color
+flag,깃발,6,8,완주,"팀이 끝까지 도착했다.",#C64B3C,#F5D2CC
+compass,나침반,5,10,방향,"팀의 방향이 정해졌다.",#24476B,#D8E3EC
+map,지도,4,12,구조,"길이 한눈에 정리됐다.",#5F7A52,#E1E8D9
+lantern,랜턴,3,18,통찰,"보이지 않던 길을 비췄다.",#D49A2A,#F6E4B8
+rope,로프,2,24,연결,"팀이 서로를 연결했다.",#8A6A4F,#E8D8C7
+food,식량,1,28,지속,"끝까지 갈 힘을 챙겼다.",#A7A06A,#EEEACB

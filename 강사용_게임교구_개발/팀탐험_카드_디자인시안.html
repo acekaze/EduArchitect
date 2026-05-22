@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>팀 탐험 카드 디자인 시안</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    :root {
+      --ink: #182321;
+      --muted: #5a6661;
+      --back: #1f332d;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #eee7da;
+      color: var(--ink);
+      font-family: "Pretendard", "Noto Sans KR", Arial, sans-serif;
+    }
+
+    .page {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 36px 28px 48px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 24px;
+      margin-bottom: 28px;
+      border-bottom: 1px solid #d6c8b6;
+      padding-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 30px;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+
+    .subtitle {
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.55;
+    }
+
+    .spec {
+      text-align: right;
+      color: #5b5147;
+      font-size: 13px;
+      line-height: 1.5;
+      white-space: nowrap;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+      align-items: start;
+    }
+
+    .card {
+      aspect-ratio: 7 / 10;
+      position: relative;
+      overflow: hidden;
+      border: 1.5px solid rgba(24, 35, 33, 0.38);
+      border-radius: 14px;
+      background:
+        linear-gradient(145deg, rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.22)),
+        var(--sub);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 14px 28px rgba(47, 38, 25, 0.14);
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.74);
+      border-radius: 10px;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 26% 22%, rgba(255, 255, 255, 0.52), transparent 34%),
+        repeating-linear-gradient(34deg, transparent 0 32px, rgba(24, 35, 33, 0.04) 32px 34px);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .card > * {
+      position: relative;
+      z-index: 3;
+    }
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .label {
+      color: var(--main);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      line-height: 1.22;
+      text-transform: uppercase;
+    }
+
+    .score {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: var(--main);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 18px rgba(24, 35, 33, 0.22);
+      flex: 0 0 auto;
+    }
+
+    .score strong {
+      font-size: 28px;
+      line-height: 1;
+      font-weight: 900;
+    }
+
+    .score span {
+      font-size: 8px;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+    }
+
+    .visual {
+      display: grid;
+      place-items: center;
+      text-align: center;
+      margin-top: 2px;
+    }
+
+    .icon-frame {
+      width: 116px;
+      height: 116px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 16px;
+      border: 2px solid color-mix(in srgb, var(--main), white 18%);
+      border-radius: 50%;
+      background:
+        radial-gradient(circle at 50% 44%, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.34) 68%),
+        color-mix(in srgb, var(--sub), white 18%);
+    }
+
+    .icon {
+      width: 72px;
+      height: 72px;
+      color: var(--main);
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2.2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .name {
+      font-size: 36px;
+      line-height: 1.05;
+      font-weight: 900;
+      letter-spacing: 0;
+      color: var(--ink);
+    }
+
+    .meaning {
+      width: fit-content;
+      margin: 12px auto 0;
+      padding: 4px 12px;
+      border: 1px solid color-mix(in srgb, var(--main), white 22%);
+      border-radius: 999px;
+      color: var(--main);
+      background: rgba(255, 255, 255, 0.55);
+      font-size: 14px;
+      font-weight: 900;
+    }
+
+    .copy {
+      min-height: 54px;
+      padding: 0 6px 2px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      text-align: center;
+      color: #182321;
+      font-size: 17px;
+      line-height: 1.35;
+      font-weight: 800;
+      word-break: keep-all;
+    }
+
+    .back {
+      color: #fffaf2;
+      background:
+        radial-gradient(circle at 50% 38%, rgba(242, 218, 153, 0.12), transparent 42%),
+        linear-gradient(145deg, #1f332d, #182621);
+      align-items: center;
+      justify-content: center;
+      gap: 26px;
+      text-align: center;
+    }
+
+    .back::before {
+      border-color: rgba(255, 255, 255, 0.22);
+    }
+
+    .back::after {
+      background:
+        linear-gradient(90deg, transparent 0 47%, rgba(255, 255, 255, 0.08) 47% 53%, transparent 53% 100%),
+        linear-gradient(0deg, transparent 0 47%, rgba(255, 255, 255, 0.08) 47% 53%, transparent 53% 100%);
+      transform: rotate(18deg) scale(1.4);
+    }
+
+    .back-mark {
+      width: 132px;
+      height: 132px;
+      color: #e7d8a6;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      opacity: 0.9;
+    }
+
+    .back-title {
+      font-size: 29px;
+      line-height: 1.15;
+      font-weight: 900;
+      letter-spacing: 0.06em;
+    }
+
+    .note {
+      margin-top: 26px;
+      padding: 18px 20px;
+      background: #fffaf2;
+      border: 1px solid #d6c8b6;
+      font-size: 14px;
+      line-height: 1.65;
+      color: #413d36;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <div>
+        <h1>팀 탐험 카드 디자인 시안</h1>
+        <p class="subtitle">강사용 오프라인 집합과정의 팀 보상 카드입니다. 탐험 메타포를 쓰되, 기업교육 현장에서 너무 가볍게 보이지 않도록 차분한 색과 단순한 라인 아이콘으로 구성했습니다.</p>
+      </div>
+      <div class="spec">
+        70mm x 100mm<br>
+        무광 코팅 권장<br>
+        앞면 6종 + 공통 뒷면
+      </div>
+    </header>
+
+    <section class="grid" id="cards"></section>
+
+    <section class="note">
+      디자인 방향: 점수는 우측 상단에서 즉시 보이게 두고, 중앙에는 탐험 도구 아이콘을 크게 배치했습니다. 카드 하단 문구는 활동의 의미를 짧게 환기하는 역할만 합니다. 실제 운영에서는 카드를 팀 봉투에 모아두고 마지막에 정산합니다.
+    </section>
+  </main>
+
+  <script>
+    const icons = {
+      flag: `
+        <path d="M7 20V4" />
+        <path d="M7 5h10l-2 4 2 4H7" />
+        <path d="M5 20h6" />
+      `,
+      compass: `
+        <circle cx="12" cy="12" r="9" />
+        <path d="M12 3v3" />
+        <path d="M12 18v3" />
+        <path d="M3 12h3" />
+        <path d="M18 12h3" />
+        <path d="M15.5 8.5l-2.2 5.1-4.8 1.9 2.2-5.1 4.8-1.9z" />
+      `,
+      map: `
+        <path d="M4 6l5-2 6 2 5-2v14l-5 2-6-2-5 2V6z" />
+        <path d="M9 4v14" />
+        <path d="M15 6v14" />
+      `,
+      lantern: `
+        <path d="M9 4h6" />
+        <path d="M10 4c0 2-2 2-2 5v8c0 2 2 3 4 3s4-1 4-3V9c0-3-2-3-2-5" />
+        <path d="M9 11h6" />
+        <path d="M9 16h6" />
+        <path d="M12 8v2" />
+      `,
+      rope: `
+        <path d="M8 8c-2 0-4 2-4 4s2 4 4 4c1.5 0 2.7-.7 4-2" />
+        <path d="M16 8c2 0 4 2 4 4s-2 4-4 4c-1.5 0-2.7-.7-4-2" />
+        <path d="M9 12h6" />
+        <path d="M10.5 9.5l3 5" />
+        <path d="M13.5 9.5l-3 5" />
+      `,
+      food: `
+        <path d="M7 8h10l1 11H6L7 8z" />
+        <path d="M9 8c0-3 6-3 6 0" />
+        <path d="M9 12h6" />
+        <path d="M10 16h4" />
+      `
+    };
+
+    const cards = [
+      { id: "flag", name: "깃발", score: 6, meaning: "완주", copy: "팀이 끝까지 도착했다.", main: "#C64B3C", sub: "#F5D2CC" },
+      { id: "compass", name: "나침반", score: 5, meaning: "방향", copy: "팀의 방향이 정해졌다.", main: "#24476B", sub: "#D8E3EC" },
+      { id: "map", name: "지도", score: 4, meaning: "구조", copy: "길이 한눈에 정리됐다.", main: "#5F7A52", sub: "#E1E8D9" },
+      { id: "lantern", name: "랜턴", score: 3, meaning: "통찰", copy: "보이지 않던 길을 비췄다.", main: "#D49A2A", sub: "#F6E4B8" },
+      { id: "rope", name: "로프", score: 2, meaning: "연결", copy: "팀이 서로를 연결했다.", main: "#8A6A4F", sub: "#E8D8C7" },
+      { id: "food", name: "식량", score: 1, meaning: "지속", copy: "끝까지 갈 힘을 챙겼다.", main: "#A7A06A", sub: "#EEEACB" }
+    ];
+
+    const root = document.getElementById("cards");
+
+    function svgIcon(id, className = "icon") {
+      return `
+        <svg class="${className}" viewBox="0 0 24 24" aria-hidden="true">
+          ${icons[id]}
+        </svg>
+      `;
+    }
+
+    function createCard(card) {
+      const el = document.createElement("article");
+      el.className = "card";
+      el.style.setProperty("--main", card.main);
+      el.style.setProperty("--sub", card.sub);
+      el.innerHTML = `
+        <div class="top">
+          <div class="label">TEAM<br>EXPLORATION</div>
+          <div class="score"><strong>${card.score}</strong><span>POINT</span></div>
+        </div>
+        <div class="visual">
+          <div class="icon-frame">${svgIcon(card.id)}</div>
+          <div class="name">${card.name}</div>
+          <div class="meaning">${card.meaning}</div>
+        </div>
+        <div class="copy">${card.copy}</div>
+      `;
+      return el;
+    }
+
+    function createBack() {
+      const el = document.createElement("article");
+      el.className = "card back";
+      el.innerHTML = `
+        ${svgIcon("compass", "back-mark")}
+        <div class="back-title">EXPLORATION<br>CARD</div>
+      `;
+      return el;
+    }
+
+    cards.forEach((card) => root.appendChild(createCard(card)));
+    root.appendChild(createBack());
+  </script>
+</body>
+</html>

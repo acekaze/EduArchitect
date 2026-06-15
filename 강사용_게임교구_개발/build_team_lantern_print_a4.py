@@ -137,14 +137,16 @@ def make_preview(front_a, back_a, front_b):
 def main():
     OUT_DIR.mkdir(exist_ok=True)
     PAGE_DIR.mkdir(exist_ok=True)
+    for old_file in PAGE_DIR.glob("*.png"):
+        old_file.unlink()
 
     lantern_front, lantern_back, _ = save_set("등불카드", make_lantern_paths())
-    score_front, _, _ = save_set("빛조각카드", make_score_paths())
+    score_front, _, _ = save_set("불빛카드", make_score_paths())
     make_preview(lantern_front[0], lantern_back[0], score_front[0])
 
     print(OUT_DIR)
     print(OUT_DIR / "팀등불_등불카드_A4_앞뒤교차_v1.pdf")
-    print(OUT_DIR / "팀등불_빛조각카드_A4_앞뒤교차_v1.pdf")
+    print(OUT_DIR / "팀등불_불빛카드_A4_앞뒤교차_v1.pdf")
     print(OUT_DIR / "팀등불_A4인쇄용_페이지미리보기_v1.png")
 
 

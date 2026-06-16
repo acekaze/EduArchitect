@@ -2,7 +2,7 @@ import csv
 import math
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 
 BASE = Path(__file__).resolve().parent
@@ -24,7 +24,13 @@ BACK_OUT = BASE / "팀등불_AI카드뒷면_시안_v1.png"
 CARD_W = 1050
 CARD_H = 1500
 
+USER_FONT_DIR = Path("C:/Users/aceka/AppData/Local/Microsoft/Windows/Fonts")
+REPO_FONT_DIR = BASE.parent / ".codex-work" / "ai-collab-course-slides" / "fonts" / "pretendard" / "public"
+
 TITLE_FONT_PATHS = [
+    USER_FONT_DIR / "Pretendard-Black.otf",
+    REPO_FONT_DIR / "static" / "Pretendard-Black.otf",
+    REPO_FONT_DIR / "static" / "alternative" / "Pretendard-Black.ttf",
     Path("C:/Windows/Fonts/GmarketSansTTFBold.ttf"),
     Path("C:/Windows/Fonts/HMKMRHD.TTF"),
     Path("C:/Windows/Fonts/HanSantteutDotum-Bold.ttf"),
@@ -32,6 +38,11 @@ TITLE_FONT_PATHS = [
 ]
 
 BODY_FONT_PATHS = [
+    USER_FONT_DIR / "Pretendard-Regular.otf",
+    USER_FONT_DIR / "PretendardVariable.ttf",
+    REPO_FONT_DIR / "static" / "Pretendard-Regular.otf",
+    REPO_FONT_DIR / "static" / "alternative" / "Pretendard-Regular.ttf",
+    REPO_FONT_DIR / "variable" / "PretendardVariable.ttf",
     Path("C:/Windows/Fonts/GmarketSansTTFMedium.ttf"),
     Path("C:/Windows/Fonts/HanSantteutDotum-Regular.ttf"),
     Path("C:/Windows/Fonts/NotoSansKR-VF.ttf"),
@@ -158,6 +169,45 @@ def add_soft_panel(draw, box, radius, fill, outline, width=3):
     rounded_rect(draw, box, radius, fill, outline, width)
 
 
+def make_lantern_icon(bg, size):
+    crop = bg.crop((315, 35, 735, 470)).convert("RGBA")
+    crop.thumbnail((size, size), Image.LANCZOS)
+    canvas = Image.new("RGBA", (size, size), (0, 0, 0, 0))
+    x = (size - crop.width) // 2
+    y = (size - crop.height) // 2
+
+    mask = Image.new("L", crop.size, 0)
+    mask_draw = ImageDraw.Draw(mask)
+    mask_draw.rounded_rectangle((0, 0, crop.width, crop.height), radius=36, fill=255)
+    mask = mask.filter(ImageFilter.GaussianBlur(8))
+    canvas.paste(crop, (x, y), mask)
+    return canvas
+
+
+def draw_lantern_count(img, bg, count, center_y):
+    overlay = Image.new("RGBA", (CARD_W, CARD_H), (0, 0, 0, 0))
+    draw_overlay = ImageDraw.Draw(overlay)
+    icon_size = {1: 250, 2: 218, 3: 188}.get(count, 188)
+    gap = {1: 0, 2: 34, 3: 26}.get(count, 26)
+    total_w = count * icon_size + max(0, count - 1) * gap
+    start_x = (CARD_W - total_w) // 2
+    icon_y = int(center_y - icon_size / 2)
+
+    for idx in range(count):
+        x = start_x + idx * (icon_size + gap)
+        draw_overlay.ellipse(
+            (x - 28, icon_y - 28, x + icon_size + 28, icon_y + icon_size + 28),
+            fill=(240, 183, 70, 48),
+        )
+        draw_overlay.ellipse(
+            (x + 18, icon_y + 18, x + icon_size - 18, icon_y + icon_size - 18),
+            fill=(255, 226, 145, 34),
+        )
+        overlay.alpha_composite(make_lantern_icon(bg, icon_size), (x, icon_y))
+
+    return Image.alpha_composite(img.convert("RGBA"), overlay).convert("RGB")
+
+
 def make_lantern_card(row, bg):
     img = bg.copy().convert("RGBA")
     panel = Image.new("RGBA", (CARD_W, CARD_H), (0, 0, 0, 0))
@@ -193,15 +243,15 @@ def make_score_card(row, bg):
 
     label_font = title_font(74)
     label_lines = wrap_text(draw, row["label"], 700, label_font)
-    draw_center_lines(draw, 645, label_lines, label_font, "#FFF1C9", 16)
+    draw_center_lines(draw, 625, label_lines, label_font, "#FFF1C9", 16)
 
-    score = f"+ {row['score']}"
-    score_font = title_font(152)
-    draw.text((CARD_W // 2 - text_width(draw, score, score_font) // 2, 770), score, font=score_font, fill="#F0B746")
+    count = int(row["score"])
+    img = draw_lantern_count(img, bg, count, 820)
+    draw = ImageDraw.Draw(img)
 
     desc_font = body_font(32)
     desc_lines = wrap_text(draw, row["description"], 680, desc_font)
-    draw_center_lines(draw, 1040, desc_lines, desc_font, "#EFE4C8", 10)
+    draw_center_lines(draw, 1045, desc_lines, desc_font, "#EFE4C8", 10)
     return img
 
 
@@ -230,6 +280,9 @@ def save_contact(paths, out_path, cols=6, thumb=(315, 450)):
 def main():
     FRONT_DIR.mkdir(parents=True, exist_ok=True)
     SCORE_DIR.mkdir(parents=True, exist_ok=True)
+    for folder in (FRONT_DIR, SCORE_DIR):
+        for old_file in folder.glob("*.png"):
+            old_file.unlink()
 
     front_bg = load_background(FRONT_BG)
     score_bg = load_background(SCORE_BG)

@@ -120,7 +120,7 @@ def build_doc() -> Document:
     add_intro_box(
         doc,
         "이번 제안은 AI를 별도의 툴 체험으로 분리하지 않고, 앞서 학습한 반도체 시장 트렌드와 공정 이해를 "
-        "NotebookLM 기반 학습 자산으로 전환해 실용성과 협업 메시지를 함께 남기는 방향으로 설계한 안입니다.",
+        "Antigravity와 NotebookLM 기반 학습 자산으로 전환해 실용성과 협업 메시지를 함께 남기는 방향으로 설계한 안입니다.",
     )
 
     add_heading(doc, "1. 제안 배경")
@@ -140,6 +140,7 @@ def build_doc() -> Document:
     add_heading(doc, "2. 설계 원칙")
     for item in [
         "AI는 기능 시연보다 학습 내용의 구조화와 현업 번역의 도구로 다룬다.",
+        "AI 기본 실습은 Antigravity 설치와 첫 실행을 포함해 진행한다.",
         "반도체 시장, 기술, 공정 사전 학습과 끊기지 않게 이어간다.",
         "부서와 직무가 달라도 함께 기여할 수 있는 팀 과제로 설계한다.",
         "결과물은 발표용 장식물이 아니라 이후에도 다시 꺼내볼 수 있는 학습 자산으로 남긴다.",
@@ -154,7 +155,7 @@ def build_doc() -> Document:
         "하나를 선택해, 타직무자나 협업 파트너도 이해할 수 있는 형태로 재구성하는 과제입니다."
     )
     add_label_paragraph(doc, "핵심 목표", "배운 반도체 내용을 더 잘 이해하고, 더 쉽게 설명하고, 협업에 다시 연결할 수 있게 만든다.")
-    add_label_paragraph(doc, "메인 도구", "NotebookLM")
+    add_label_paragraph(doc, "메인 도구", "Antigravity + NotebookLM")
     add_label_paragraph(doc, "성과 방향", "기술 구현보다 공통 이해와 설명력을 강화하는 결과물을 만든다.")
 
     add_heading(doc, "4. 3일 과정 내 권장 위치")
@@ -174,7 +175,7 @@ def build_doc() -> Document:
         ["Day 1", "Module 1", "팀 빌딩", "협업의 기준과 공통 이해의 중요성 심기", "협업 질문 메모"],
         ["Day 1", "Module 2", "반도체 시장 트렌드", "현업에서 의미 있다고 느낀 이슈 기록", "주제 후보 메모"],
         ["Day 2", "Module 3", "반도체 공정 이해", "타직무자가 헷갈릴 개념 포착", "핵심 개념 메모"],
-        ["Day 2", "Module 4", "생성형 AI 개념 이해 + 조별 과제 설계", "AI 기본 2시간 이상 + 팀 주제 선정", "팀 과제 설계안"],
+        ["Day 2", "Module 4", "생성형 AI 개념 이해 + Antigravity 설치 실습 + 조별 과제 설계", "AI 기본 2시간 이상 + Antigravity 첫 실행 + 팀 주제 선정", "팀 과제 설계안"],
         ["Day 3", "Module 5", "생성형 AI Skill 활용", "NotebookLM으로 학습 자산 제작", "인사이트 팩"],
         ["Day 3", "Module 6", "Wrap-up", "AI 발표 후 협업 액티비티와 엔딩 장표로 마무리", "발표, 엔딩 장표"],
     ]
@@ -184,16 +185,17 @@ def build_doc() -> Document:
             set_cell_text(cells[idx], value, size=9.1)
 
     add_heading(doc, "5. AI 모듈 상세 제안")
-    add_heading(doc, "5-1. Module 4 - AI 기본 이해 및 팀 과제 설계", level=2)
+    add_heading(doc, "5-1. Module 4 - AI 기본 이해, Antigravity 설치 실습 및 팀 과제 설계", level=2)
     add_label_paragraph(doc, "권장 시간", "약 2시간 30분")
     add_body(
         doc,
         "Module 4에서는 AI 기본기를 별도로 확보하되, 툴 소개로 흩어지지 않도록 바로 팀 과제 설계까지 연결하는 흐름이 중요합니다. "
         "참여자는 생성형 AI의 기본 원리, 잘하는 일과 한계, 프롬프트의 기본 구조, 검증의 필요성을 이해한 뒤 "
-        "NotebookLM 기반 팀 과제를 설계합니다."
+        "Antigravity를 직접 설치하고 첫 요청문을 실행해 본 후 NotebookLM 기반 팀 과제를 설계합니다."
     )
     for item in [
         "AI 기본 이해: 생성형 AI의 원리, 강점, 한계, 사실 검증 기준",
+        "Antigravity 설치 실습: 다운로드, 로그인, Fast 모드 선택, 샘플 워크스페이스 열기, 계획-승인-생성 흐름 경험",
         "NotebookLM 소개: 소스 업로드, 질문, Briefing Document, Mind Map, Data Table, Slide Deck, Infographic 등",
         "팀 과제 설계: 주제 선정, 대상 청중 정의, 핵심 질문 3-5개 도출",
     ]:
@@ -204,7 +206,8 @@ def build_doc() -> Document:
     add_body(
         doc,
         "Module 5의 핵심은 NotebookLM의 기능을 많이 써보는 것이 아니라, 하나의 반도체 주제를 여러 형태의 학습 자산으로 "
-        "재구성하는 것입니다. 팀별로 자료를 업로드한 뒤 보고서, 구조도, 비교표, 발표용 시각자료를 만들어 "
+        "재구성하는 것입니다. 이때 Antigravity 실습에서 익힌 계획-승인-생성 흐름을 다시 연결해, "
+        "팀별로 자료를 업로드한 뒤 보고서, 구조도, 비교표, 발표용 시각자료를 만들어 "
         "학습 내용을 현업 언어로 바꿉니다."
     )
 
@@ -276,6 +279,7 @@ def build_doc() -> Document:
     add_heading(doc, "7. 기대 효과")
     for item in [
         "반도체 사전 학습이 AI 세션과 자연스럽게 연결되어 교육 흐름이 끊기지 않는다.",
+        "Antigravity 설치 실습을 통해 참가자가 AI의 계획-승인-생성 구조를 직접 경험할 수 있다.",
         "직무가 달라도 공통으로 기여할 수 있는 과제라 참여 장벽이 낮다.",
         "결과물이 발표용으로 끝나지 않고 이후에도 다시 활용 가능한 학습 자산으로 남는다.",
         "협업 메시지를 별도 액티비티와 엔딩 장표로 한 번 더 정리해 과정 전체의 마무리가 선명해진다.",
@@ -292,7 +296,7 @@ def build_doc() -> Document:
     set_cell_shading(cell, PRIMARY_LIGHT)
     set_cell_text(
         cell,
-        "이번 AI 교육은 따로 노는 툴 교육이 아니라, 이미 학습한 반도체 내용을 NotebookLM 기반 결과물로 재가공해 "
+        "이번 AI 교육은 따로 노는 툴 교육이 아니라, Antigravity로 AI의 기본 작동 흐름을 경험하고 이미 학습한 반도체 내용을 NotebookLM 기반 결과물로 재가공해 "
         "현업과 협업에 다시 연결하는 랩업 구조로 가는 것이 가장 적절합니다.",
         bold=True,
         color=PRIMARY,
@@ -301,7 +305,7 @@ def build_doc() -> Document:
 
     add_body(
         doc,
-        "권장 흐름은 Day 2 Module 4에서 AI 기본기를 확보하고 팀 과제를 설계한 뒤, Day 3 Module 5에서 NotebookLM으로 "
+        "권장 흐름은 Day 2 Module 4에서 AI 기본기와 Antigravity 설치 실습을 진행하고 팀 과제를 설계한 뒤, Day 3 Module 5에서 NotebookLM으로 "
         "학습 자산을 제작하고, Module 6에서 발표와 협업 액티비티, 엔딩 장표로 과정을 마무리하는 방식입니다."
     )
 
